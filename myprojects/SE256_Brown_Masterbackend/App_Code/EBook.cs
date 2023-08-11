@@ -80,11 +80,7 @@ namespace SE256_Brown_Masterbackend.App_Code
             return @"Server=sql.neit.edu\studentsqlserver,4500;Database=SE133_CBrown;User Id=SE133_CBrown;Password=008017698;";
         }
 
-        public EBook(): base()
-        {
-            BookmarkPage = 0;
-            DateRentalExpires = DateTime.Now.AddDays(14);
-        }
+        
 
         public string AddARecord()
         {
@@ -233,6 +229,94 @@ namespace SE256_Brown_Masterbackend.App_Code
             return comm.ExecuteReader();
             
 
+        }
+
+        public string DeleteOneEBook(int intEbook_ID)
+        {
+            Int32 intRecords = 0;
+            string strResult = "";
+
+            SqlConnection conn = new SqlConnection();
+            SqlCommand comm = new SqlCommand();
+
+            string strConn = GetConnected();
+
+            string sqlString = "DELETE FROM EBooks where Ebook_ID = @Ebook_ID;";
+
+            conn.ConnectionString = strConn;
+
+            comm.Connection = conn;
+            comm.CommandText = sqlString;
+            comm.Parameters.AddWithValue("@Ebook_ID", intEbook_ID);
+
+            try
+            {
+                conn.Open();
+
+                intRecords = comm.ExecuteNonQuery();
+                strResult = intRecords.ToString() + " Records Deleted.";
+            }
+            catch (Exception err)
+            {
+                strResult = "ERROR: " + err.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return strResult;
+        }
+
+        public string UpdateARecord()
+        {
+            Int32 intRecords = 0;
+            string strResult = "";
+
+            string strSQL = "UPDATE EBooks SET Title=@Title, AuthorFirst=@AuthorFirst, AuthorLast=@AuthorLast, Email=@Email, Pages=@Pages, DatePublished=@DatePublished, DateRentalExpires=@DateRentalExpires, BookmarkPage=@BookmarkPage, Price=@Price WHERE Ebook_ID=@Ebook_ID;";
+
+            SqlConnection conn = new SqlConnection();
+
+            string strConn = GetConnected();
+            conn.ConnectionString = strConn;
+
+            SqlCommand comm = new SqlCommand();
+            comm.CommandText = strSQL;
+            comm.Connection = conn;
+
+            comm.Parameters.AddWithValue("@Title", Title);
+            comm.Parameters.AddWithValue("@AuthorFirst", AuthorFirst);
+            comm.Parameters.AddWithValue("@AuthorLast", AuthorLast);
+            comm.Parameters.AddWithValue("@Email", Email);
+            comm.Parameters.AddWithValue("@Pages", Pages);
+            comm.Parameters.AddWithValue("@DatePublished", DatePublished);
+            comm.Parameters.AddWithValue("@DateRentalExpires", DateRentalExpires);
+            comm.Parameters.AddWithValue("@BookmarkPage", BookmarkPage);
+            comm.Parameters.AddWithValue("@Price", Price);
+            comm.Parameters.AddWithValue("@Ebook_ID", EBook_ID);
+
+            try
+            {
+                conn.Open();
+
+                intRecords = comm.ExecuteNonQuery();
+                strResult = intRecords.ToString() +
+                    " Records Updated.";
+            }
+            catch (Exception err)
+            {
+                strResult = "ERROR: " + err.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return strResult;
+        }
+
+        public EBook() : base()
+        {
+            BookmarkPage = 0;
+            DateRentalExpires = DateTime.Now.AddDays(14);
         }
     }
 }

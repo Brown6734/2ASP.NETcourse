@@ -113,6 +113,15 @@
     <br />
     <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />
 
+    &nbsp;&nbsp;&nbsp;
+    <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
+
+    &nbsp;&nbsp;&nbsp;
+    <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" />
+
+    &nbsp;&nbsp;&nbsp;
+    <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+
     <!--feedback label is intended to help us see information, such as errors or confirmation of something-->
 
     <br />

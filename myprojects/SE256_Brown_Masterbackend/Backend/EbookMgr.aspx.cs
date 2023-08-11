@@ -110,5 +110,57 @@ namespace SE256_Brown_Masterbackend.Backend
             }
 
         }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            EBook temp = new EBook();
+            temp.EBook_ID = Int32.Parse(lblEbook_ID.Text);
+            temp.Title = txtTitle.Text;
+            temp.AuthorFirst = txtAuthorFirst.Text;
+            temp.AuthorLast = txtAuthorLast.Text;
+            temp.Email = txtAuthorEmail.Text;
+            temp.DatePublished = calDatePublished.SelectedDate;
+
+            Int32 intPages = 0;
+            if (Int32.TryParse(txtPages.Text, out intPages))
+            {
+                temp.Pages = intPages;
+            }
+
+            double dblPrice = 0;
+            if (Double.TryParse(txtPrice.Text, out dblPrice))
+            {
+                temp.Price = dblPrice;
+            }
+
+            Int32 intBookmarkPage = 0;
+            if (Int32.TryParse(txtBookmarkPage.Text, out intBookmarkPage))
+            {
+                temp.BookmarkPage = intBookmarkPage;
+            }
+
+            if (temp.Feedback.Contains("ERROR: "))
+            {
+                lblFeedback.Text = temp.Feedback;
+            }
+            else
+            {
+                lblFeedback.Text = temp.UpdateARecord();
+            }
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            Int32 intEbook_ID = Convert.ToInt32(lblEbook_ID.Text);
+
+            EBook temp = new EBook();
+
+            lblFeedback.Text = temp.DeleteOneEBook(intEbook_ID);
+        }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/backend/ControlPanel");
+        }
     }
 }
