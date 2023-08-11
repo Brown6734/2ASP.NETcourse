@@ -31,6 +31,10 @@ namespace SE256_Brown_Masterbackend.Backend
 
             if ((!IsPostBack) && Request.QueryString["Ebook_ID"] != null)
             {
+
+                btnAdd.Visible = false;
+                btnAdd.Enabled = false;
+
                 strEbook_ID = Request.QueryString["Ebook_ID"].ToString();
                 lblEbook_ID.Text = strEbook_ID;
 
@@ -61,6 +65,11 @@ namespace SE256_Brown_Masterbackend.Backend
             }
             else
             {
+                btnDelete.Visible = false;
+                btnUpdate.Visible = false;
+                btnDelete.Enabled = false;
+                btnUpdate.Enabled = false;
+
                 //btnDelete.Visible = false;
                 //btnUpdate.Visible = false;
                 //btnDelete.Enabled = false;
