@@ -111,6 +111,8 @@
     <Content Include="Backend\Default.aspx" />
     <Content Include="Backend\EbookMgr.aspx" />
     <Content Include="Backend\Product2.aspx" />
+    <Content Include="Backend\ProductMgr.aspx" />
+    <Content Include="Backend\ProductSearch.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -229,6 +231,20 @@
     </Compile>
     <Compile Include="Backend\Product2.aspx.designer.cs">
       <DependentUpon>Product2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\ProductMgr.aspx.cs">
+      <DependentUpon>ProductMgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\ProductMgr.aspx.designer.cs">
+      <DependentUpon>ProductMgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\ProductSearch.aspx.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend\ProductSearch.aspx.designer.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
