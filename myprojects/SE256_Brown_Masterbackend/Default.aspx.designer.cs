@@ -42,22 +42,40 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.DropDownList shopdrop;
 
         /// <summary>
-        /// DropDownList6 control.
+        /// TreeView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList6;
+        protected global::System.Web.UI.WebControls.TreeView TreeView2;
 
         /// <summary>
-        /// DropDownList7 control.
+        /// DropDeals control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList7;
+        protected global::System.Web.UI.WebControls.DropDownList DropDeals;
+
+        /// <summary>
+        /// TreeView3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TreeView TreeView3;
+
+        /// <summary>
+        /// TreeView4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TreeView TreeView4;
 
         /// <summary>
         /// textSearch control.
@@ -69,13 +87,13 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.TextBox textSearch;
 
         /// <summary>
-        /// NavDropDown control.
+        /// TreeView5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList NavDropDown;
+        protected global::System.Web.UI.WebControls.TreeView TreeView5;
 
         /// <summary>
         /// helpButton control.
@@ -105,22 +123,22 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.Button shoppingCartButton;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// TreeView6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.TreeView TreeView6;
 
         /// <summary>
-        /// DropDownList2 control.
+        /// TreeView7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.TreeView TreeView7;
 
         /// <summary>
         /// Button1 control.
@@ -141,22 +159,13 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// DropDownList3 control.
+        /// TreeView8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
-
-        /// <summary>
-        /// DropDownList4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+        protected global::System.Web.UI.WebControls.TreeView TreeView8;
 
         /// <summary>
         /// SetStoreBtn control.
@@ -166,5 +175,23 @@ namespace SE256_Brown_Masterbackend
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SetStoreBtn;
+
+        /// <summary>
+        /// Menu1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Menu Menu1;
+
+        /// <summary>
+        /// TreeView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TreeView TreeView1;
     }
 }

@@ -1,10 +1,158 @@
 ﻿body {
 }
 
-.logoImage{
+
+/*
+    some notes here
+
+*/
+
+.shopTree{
     box-sizing:border-box;
+    left:10px;
+    top: 50px;
+
+    padding-right:60px;
+    border: 5px solid blue;
+}
+
+.spaces{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+    margin-left:120px;
+    margin-top:-30px;
+    max-width:50px;
+
+    border:5px solid green;
+    
+}
+
+.DealsTree{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+
+    margin-left: 170px;
+    margin-top:-40px;
+    border: 5px solid red;
+    max-width:120px;
+    
+}
+
+.spaces2{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+    margin-left:290px;
+    margin-top:-30px;
+    max-width:50px;
+    border:5px solid gold;
+}
+
+.ServicesTree{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+
+    margin-left: 340px;
+    margin-top: -40px;
+    border: 5px solid brown;
+    max-width:120px;
+    
+}
+
+.SearchBox{
+    box-sizing:border-box;
+    left:50px;
+    top:-20px;
+    height:60px;
+    width:100px;
+    
+    margin-left:470px;
+    
+    margin-top:-50px;
+
+    
+    border:5px solid orange;
+}
+
+.NavTree{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+
+    margin-left:570px;
+    margin-top:-70px;
+    border:5px solid pink;
+    max-width:120px;
+
 
 }
+
+.helpIcon{
+    box-sizing:border-box;
+    left:50px;
+    top:-50px;
+    height:30px;
+    width:30px;
+    
+    max-width:80px;
+    margin-left:720px;
+    margin-top:-50px;
+
+   
+
+    border:5px solid teal;
+}
+
+.BusTree{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+
+    max-width:120px;
+    border: 5px solid crimson;
+}
+
+.space4{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+    
+    max-width:40px;
+    margin-left:120px;
+    margin-top:-30px;
+
+    border: 5px solid purple;
+}
+
+.TodayTree{
+    box-sizing:border-box;
+    left: 50px;
+    top: 50px;
+
+    max-width: 120px;
+    margin-left:160px;
+    margin-top:-40px;
+
+    border:5px solid navy;
+}
+
+/*
+    .NavTree{
+    box-sizing:border-box;
+    left:50px;
+    top:50px;
+
+    margin-left: 250px;
+    margin-top:-60px;
+    border: 5px solid pink;
+}
+
+
+*/
+
 
 .dealRect1{
     /*

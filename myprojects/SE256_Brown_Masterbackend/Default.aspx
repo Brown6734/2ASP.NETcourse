@@ -47,72 +47,102 @@
 
 
 
-        &nbsp;
+        
 
-        <!--shop dropdown -->
+        <!--shop dropdown 
         <asp:DropDownList ID="shopdrop" runat="server" >
             <asp:ListItem Text="Shop"></asp:ListItem>
             <asp:ListItem>Option 1</asp:ListItem>
             <asp:ListItem>Option 2</asp:ListItem>
-        </asp:DropDownList>
+        </asp:DropDownList>-->
+
+        
+        
+        <asp:TreeView ID="TreeView2" runat="server" CssClass="shopTree" Width="120px">
+            <Nodes>
+                <asp:TreeNode Text="Shop" Value="Shop" Expanded="False">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+
+        <p class="spaces">&nbsp; &nbsp; &nbsp; &nbsp; </p>
 
         
 
         
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-        <!--deals dropdown-->
-        <asp:DropDownList ID="DropDownList6" runat="server">
+        <!--deals dropdown
+        <asp:DropDownList ID="DropDeals" runat="server" >
             <asp:ListItem>Deals</asp:ListItem>
             <asp:ListItem>Option 1</asp:ListItem>
             <asp:ListItem>Option 2</asp:ListItem>
-        </asp:DropDownList> 
+        </asp:DropDownList> -->
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
+
+        <asp:TreeView ID="TreeView3" runat="server" CssClass="DealsTree" Width="120px">
+            <Nodes>
+                <asp:TreeNode Text="Deals" Value="Deals" Expanded="False">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+
+        
 
         <!--services dropdown-->
-        <asp:DropDownList ID="DropDownList7" runat="server" >
-            <asp:ListItem>Services</asp:ListItem>
-            <asp:ListItem>Option 1</asp:ListItem>
-            <asp:ListItem>Option 2</asp:ListItem>
-        </asp:DropDownList>
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <p class="spaces2"> &nbsp;</p>
+        
+
+        <asp:TreeView ID="TreeView4" runat="server" CssClass="ServicesTree">
+            <Nodes>
+                <asp:TreeNode Expanded="False" Text="Services" Value="Services">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+
+        
 
 
-        <asp:TextBox ID="textSearch" runat="server" MaxLength="50" Text="Search" />
+        <asp:TextBox ID="textSearch" runat="server"  Text="Search" CssClass="SearchBox" />
         <!--search textbox?--> 
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
+        
+        
         <!--navigation part it will be a drop down list-->
         <!--can do Selected="somethingevent??"-->
-        <asp:DropDownList ID="NavDropDown" runat="server" >
-            <asp:ListItem>Nav Icon</asp:ListItem>
-            <asp:ListItem>Option 1</asp:ListItem>
+        
 
-            
+        <asp:TreeView ID="TreeView5" runat="server" CssClass="NavTree">
+            <Nodes>
+                <asp:TreeNode Expanded="False" Text="Nav (icon)" Value="Nav (icon)">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
 
-            <asp:ListItem>Option 2</asp:ListItem>
-
-        </asp:DropDownList>
-
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--can I dodSdeledctedddevent happdens brings user to another page in website/site--->
 
         <!--help icon/question mark - button-->
 
-        <asp:Button ID="helpButton" runat="server" Text="?"/>
+        <asp:Button ID="helpButton" runat="server" Text="?" CssClass="helpIcon"/>
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--sign in button/login in; brings user to login page (mabye backend one for now)-->
 
         <asp:Button ID="loginButton" runat="server" Text="Sign In" OnClick="loginButton_Click"/>
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--shopping cart button-->
 
@@ -125,22 +155,32 @@
 
         <!--still in header-->
         <!--for business dropdown-->
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        
 
-            <asp:ListItem>For Business</asp:ListItem>
-            <asp:ListItem>Option 1</asp:ListItem>
-            <asp:ListItem>Option 2</asp:ListItem>
-        </asp:DropDownList>
+        &nbsp; &nbsp; &nbsp; &nbsp;
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:TreeView ID="TreeView6" runat="server" CssClass="BusTree">
+            <Nodes>
+                <asp:TreeNode Expanded="False" Text="For Business" Value="For Business">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
 
         <!--get it today--> 
-        <asp:DropDownList ID="DropDownList2" runat="server">
-            <asp:ListItem>Get it Today</asp:ListItem>
-            <asp:ListItem>Option 1</asp:ListItem>
-            <asp:ListItem>Option 2</asp:ListItem>
 
-        </asp:DropDownList>
+        <p class="space4">&nbsp;</p>
+
+        
+        <asp:TreeView ID="TreeView7" runat="server" CssClass="TodayTree">
+            <Nodes>
+                <asp:TreeNode Expanded="False" Text="Get It Today" Value="Get It Today">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
 
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -150,29 +190,28 @@
 
 
         <!--space space space-->
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; 
 
         <!--buy it again-->
         <asp:Button ID="Button2" runat="server" Text="Buy it Again" />
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
 
         <!--ideas -->
-        <asp:DropDownList ID="DropDownList3" runat="server" >
-            <asp:ListItem>Ideas</asp:ListItem>
-            <asp:ListItem>Option 1</asp:ListItem>
-            <asp:ListItem>Option 2</asp:ListItem>
+        
 
-        </asp:DropDownList>
-
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
 
         <!--orders dropdown-->
-        <asp:DropDownList ID="DropDownList4" runat="server" >
-            <asp:ListItem>Orders</asp:ListItem>
-            <asp:ListItem>Option 1</asp:ListItem>
-            <asp:ListItem>Option 2</asp:ListItem>
-        </asp:DropDownList>
+
+        <asp:TreeView ID="TreeView8" runat="server" CssClass="OrdersTree">
+            <Nodes>
+                <asp:TreeNode Expanded="False" Text="Orders" Value="Orders">
+                    <asp:TreeNode Text="Option 1" Value="Option 1"></asp:TreeNode>
+                    <asp:TreeNode Text="Option 2" Value="Option 2"></asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
 
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
@@ -257,14 +296,28 @@
         dd
         -->
 
-    <div id="dropdown1">
-        
+    <asp:Menu ID="Menu1" runat="server">
 
-        <br />
-        <br />
+        <Items>
+            <asp:MenuItem NavigateUrl="~/InkToners.aspx" Text="Ink Toners" Value="Ink Toners">
+                <asp:MenuItem NavigateUrl="~/SetStore.aspx" Text="Set Store" Value="Set Store"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/Reviews.aspx" Text="Reviews" Value="Reviews">
+                <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact Page" Value="Contact Page"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu>
 
-    </div>
-
+    <asp:TreeView ID="TreeView1" runat="server">
+        <Nodes>
+            <asp:TreeNode Text="Tree Node1" Value="Tree Node1">
+                <asp:TreeNode NavigateUrl="~/InkToners.aspx" Text="Ink Toners" Value="Ink Toners"></asp:TreeNode>
+            </asp:TreeNode>
+            <asp:TreeNode Text="Tree Node2" Value="Tree Node2">
+                <asp:TreeNode NavigateUrl="~/Reviews.aspx" Text="Reviews Page" Value="Reviews Page"></asp:TreeNode>
+            </asp:TreeNode>
+        </Nodes>
+    </asp:TreeView>
     
 
 
