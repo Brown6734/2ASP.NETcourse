@@ -45,5 +45,15 @@ namespace SE256_Brown_Masterbackend
         {
             Response.Redirect("~/InkToners.aspx");
         }
+
+        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            Response.Redirect("~/SetStore.aspx");
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

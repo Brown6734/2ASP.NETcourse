@@ -56,6 +56,9 @@
             <asp:ListItem>Option 2</asp:ListItem>
         </asp:DropDownList>-->
 
+        <asp:Button ID="anotherTry" runat="server" Text=".;.;" CssClass="some2" />
+
+        
         
         
         <asp:TreeView ID="TreeView2" runat="server" CssClass="shopTree" Width="120px">
@@ -70,7 +73,6 @@
         <p class="spaces">&nbsp; &nbsp; &nbsp; &nbsp; </p>
 
         
-
         
 
         <!--deals dropdown
@@ -223,6 +225,14 @@
 
     <br />
 
+    
+
+    <!--buttons do not like -# pixels
+        i try to do:
+        margin-top: -40px; does not make a change on the website - like it should... -->
+
+    
+
     <!--big promotions/deals - maybe on some sort of slideshow or slider thing? "C:\Users\Brown\OneDrive\Desktop\myprojects\SE256_Brown_Masterbackend\Imagess\navimage1.jpg"-->
 
     <div class="BigDeals1">
@@ -291,35 +301,50 @@
         
     </div>
 
+
+
     <!--
         drop down navigation - trying to get it to work - to move user to another page...
         dd
         -->
 
-    <asp:Menu ID="Menu1" runat="server">
-
-        <Items>
-            <asp:MenuItem NavigateUrl="~/InkToners.aspx" Text="Ink Toners" Value="Ink Toners">
-                <asp:MenuItem NavigateUrl="~/SetStore.aspx" Text="Set Store" Value="Set Store"></asp:MenuItem>
-            </asp:MenuItem>
-            <asp:MenuItem NavigateUrl="~/Reviews.aspx" Text="Reviews" Value="Reviews">
-                <asp:MenuItem NavigateUrl="~/Contact.aspx" Text="Contact Page" Value="Contact Page"></asp:MenuItem>
-            </asp:MenuItem>
-        </Items>
-    </asp:Menu>
-
-    <asp:TreeView ID="TreeView1" runat="server">
-        <Nodes>
-            <asp:TreeNode Text="Tree Node1" Value="Tree Node1">
-                <asp:TreeNode NavigateUrl="~/InkToners.aspx" Text="Ink Toners" Value="Ink Toners"></asp:TreeNode>
-            </asp:TreeNode>
-            <asp:TreeNode Text="Tree Node2" Value="Tree Node2">
-                <asp:TreeNode NavigateUrl="~/Reviews.aspx" Text="Reviews Page" Value="Reviews Page"></asp:TreeNode>
-            </asp:TreeNode>
-        </Nodes>
-    </asp:TreeView>
     
+    
+    
+    
+    <asp:Label ID="something" runat="server" Text=":{-" CssClass="things" />
 
+    <!--What asp things/template stuff do not like negavite numbers in css styling?
+        Button
+        Label
+        Textbox
+        CheckBox(s)
+        Hyperlink
+        -->
+
+    <!--items that like negative numbers in css styling
+        nav trees
+        p tags
+        tables
+        -->
+
+    <asp:CheckBox ID="CheckBox1" runat="server" Text="happy" CssClass="neg2" OnCheckedChanged="CheckBox1_CheckedChanged" />
+
+    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CssClass="link1">LinkButton</asp:LinkButton>
+    
+    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="link2">HyperLink</asp:HyperLink>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <!--input 
+        button (html)
+        
+        <input type="button" value="thing"
+
+        -->
+    <input type="button" value="please work" class="tryagain" />
 
     <script src="Scripts/Home.js"></script>
 

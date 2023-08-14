@@ -7,6 +7,26 @@
 
 */
 
+.headRed{
+    box-sizing:border-box;
+    border:5px solid black;
+
+    background-color:cornsilk;
+}
+
+.some2{
+    box-sizing:border-box;
+    left: 50px;
+    
+    
+    max-width:50px;
+    margin-left: 800px;
+
+
+    border:5px solid gold;
+    
+}
+
 .shopTree{
     box-sizing:border-box;
     left:10px;
@@ -27,6 +47,8 @@
     border:5px solid green;
     
 }
+
+
 
 .DealsTree{
     box-sizing:border-box;
@@ -65,7 +87,7 @@
 .SearchBox{
     box-sizing:border-box;
     left:50px;
-    top:-20px;
+   
     height:60px;
     width:100px;
     
@@ -90,6 +112,8 @@
 
 }
 
+/*move the help button to above/near shop tree?? */
+
 .helpIcon{
     box-sizing:border-box;
     left:50px;
@@ -100,8 +124,6 @@
     max-width:80px;
     margin-left:720px;
     margin-top:-50px;
-
-   
 
     border:5px solid teal;
 }
@@ -139,6 +161,7 @@
     border:5px solid navy;
 }
 
+
 /*
     .NavTree{
     box-sizing:border-box;
@@ -152,6 +175,21 @@
 
 
 */
+
+.things{
+    box-sizing:border-box;
+    left: 50px;
+    top: 50px;
+
+    max-width: 80px;
+
+    margin-left: 140px;
+    margin-top: -75px;
+    
+
+    border:5px solid pink;
+}
+
 
 
 .dealRect1{
@@ -325,3 +363,57 @@
     height: 200px;
 }
 
+.neg2{
+    box-sizing: border-box;
+    left: 50px;
+    top: 50px;
+
+    max-width: 60px;
+
+    margin-left: 150px;
+    
+    
+    border: 5px solid orange;
+}
+
+.link1{
+    box-sizing:border-box;
+    left: 50px;
+    top: 50px;
+
+    max-width:75px;
+
+    margin-left: 200px;
+    margin-top:-100px;
+
+    border: 5px solid green;
+}
+
+.link2{
+    box-sizing:border-box;
+    left: 50px;
+    top:50px;
+
+    max-width:80px;
+    margin-left:250px;
+    margin-top:-130px;
+
+    border:5px solid gold;
+}
+
+.tryagain{
+    box-sizing:border-box;
+    
+
+    border: 5px solid blue;
+
+    /*margin top does not work
+        padding top does not work
+        border top does not wokr
+    */
+    
+    margin-left: 650px;
+
+    padding-top:-1px;
+    
+}
