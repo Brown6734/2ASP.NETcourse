@@ -34,6 +34,12 @@
 
             <tr>
                 <td>
+                    <a href="ProductMgr.aspx" runat="server">Search products</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
                     <asp:Button ID="btnLogout" runat="server" Text="Log Out" OnClick="btnLogout_Click" />
                 </td>
             </tr>

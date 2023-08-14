@@ -61,6 +61,15 @@ namespace SE256_Brown_Masterbackend.Backend
                     calRentalExpires.VisibleDate = DateTime.Parse(dr["DateRentalExpires"].ToString()).Date;
                     calRentalExpires.SelectedDate = DateTime.Parse(dr["DateRentalExpires"].ToString()).Date;
 
+                    //txtProdName
+                    //txtProdManu
+                    //txtProdPrice
+                    //checkAvaiable
+                    //txtProdDescrip
+                    //calManuDate
+                    //txtQuantOnHand
+                    //
+
                 }
             }
             else
@@ -169,7 +178,7 @@ namespace SE256_Brown_Masterbackend.Backend
 
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/backend/ControlPanel");
+            Response.Redirect("~/Backend/ControlPanel");
         }
     }
 }

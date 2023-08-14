@@ -43,7 +43,7 @@
 
         <!--<asp:Image ID="Image1" runat="server" ImageUrl="~/Imgs/logotry1.png" Height="200px" Width="200px" />-->
 
-        <p>Some text please work for github repositry with visual studio 2019 and github stuff</p>
+        <p>I am currently working on fixing my header/improving the header.</p>
 
 
 

@@ -43,6 +43,7 @@ namespace SE256_Brown_Masterbackend
         private DateTime manuDate;
         private string feedback = "";
         private double quantOnHand;
+        private int products3_ID;
 
         ///gets and sets
         ///
@@ -174,6 +175,25 @@ namespace SE256_Brown_Masterbackend
             }
         }
 
+        public Int32 Products3_ID
+        {
+            get
+            {
+                return products3_ID;
+            }
+            set
+            {
+                if(value > 0)
+                {
+                    products3_ID = value;
+                }
+                else
+                {
+                    Feedback += "\nERROR: you entered an invalid product id";
+                }
+            }
+        }
+
 
         /// <summary>
         /// data set part below
@@ -237,7 +257,7 @@ namespace SE256_Brown_Masterbackend
             return strResult;
         }
 
-        public DataSet SearchProducts3(String strProdName, String strProdManu)
+        public DataSet SearchProducts3_DS(String strProdName, String strProdManu)
         {
             //Create a dataset to return filled
             DataSet ds = new DataSet();
@@ -289,6 +309,48 @@ namespace SE256_Brown_Masterbackend
             return ds;
         }
 
+        //fields for Products3 table
+        //Products3_ID - int
+        //ProductName
+        //ProductManu
+        //ProductPrice
+        //Available
+        //ProductDesc
+        //ManuDate
+        //QuantOnHand-
+
+        public SqlDataReader SearchProducts3_DR(String strProdName, String strProdManu)
+        {
+            SqlDataReader dr;
+            SqlCommand comm = new SqlCommand();
+
+            String strSQL = "SELECT Products3_ID, ProductName, ProductManu, ProductPrice FROM Products3 WHERE 0=0";
+
+            if (strProdName.Length > 0)
+            {
+                strSQL += " AND ProductName LIKE @ProductName";
+                comm.Parameters.AddWithValue("@ProductName", "%" + strProdName + "%");
+            }
+            if (strProdManu.Length > 0)
+            {
+                strSQL += " AND ProductManu LIKE @ProductManu";
+                comm.Parameters.AddWithValue("@ProductManu", "%" + strProdManu + "%");
+            }
+
+            SqlConnection conn = new SqlConnection();
+            string strConn = GetConnected();
+            conn.ConnectionString = strConn;
+
+            comm.Connection = conn;
+            comm.CommandText = strSQL;
+
+            conn.Open();
+            dr = comm.ExecuteReader();
+
+            return dr;
+
+        }
+
         public SqlDataReader FindOneProduct(int intProducts3_ID)
         {
             //Create and Initialize the DB Tools we need
@@ -315,6 +377,105 @@ namespace SE256_Brown_Masterbackend
 
             //Return some form of feedback
             return comm.ExecuteReader();   //Return the dataset to be used by others (the calling form)
+
+        }
+
+        //id = Products3_ID
+        //table = Products3
+
+        public string DeleteOneProduct(int intProducts3_ID)
+        {
+            Int32 intRecords = 0;
+            string strResult = "";
+
+            SqlConnection conn = new SqlConnection();
+            SqlCommand comm = new SqlCommand();
+
+            string strConn = GetConnected();
+
+            string sqlString = "DELETE FROM Products3 WHERE Products3_ID = @Products3_ID;";
+
+            conn.ConnectionString = strConn;
+
+            comm.Connection = conn;
+            comm.CommandText = sqlString;
+            comm.Parameters.AddWithValue("@Products3_ID", intProducts3_ID);
+
+            //id = Products3_ID
+            //table = Products3
+
+            try
+            {
+                conn.Open();
+
+                intRecords = comm.ExecuteNonQuery();
+                strResult = intRecords.ToString() + " Records Deleted.";
+            }
+            catch (Exception err)
+            {
+                strResult = "ERROR: " + err.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return strResult;
+        }
+
+        //id = Products3_ID
+        //table = Products3
+
+        public string UpdateARecord()
+        {
+            Int32 intRecords = 0;
+            string strResult = "";
+
+            //fields for Products3 table
+            //Products3_ID - int
+            //ProductName
+            //ProductManu
+            //ProductPrice
+            //Available
+            //ProductDesc
+            //ManuDate
+            //QuantOnHand
+
+            string strSQL = "UPDATE Products3 SET ProductName=@ProductName, ProductManu=@ProductManu, ProductPrice=@ProductPrice, Available=@Available, ProductDesc=@ProductDesc, ManuDate=@ManuDate, QuantOnHand=@QuantOnHand WHERE Products3_ID=@Products3_ID;";
+
+            SqlConnection conn = new SqlConnection();
+            string strConn = GetConnected();
+
+            conn.ConnectionString = strConn;
+
+            SqlCommand comm = new SqlCommand();
+            comm.CommandText = strSQL;
+            comm.Connection = conn;
+
+            comm.Parameters.AddWithValue("@ProductName", ProductName);
+            comm.Parameters.AddWithValue("@ProductManu", ProductManu);
+            comm.Parameters.AddWithValue("@ProductPrice", ProductPrice);
+            comm.Parameters.AddWithValue("@Available", Available);
+            comm.Parameters.AddWithValue("@ProductDesc", ProductDesc);
+            comm.Parameters.AddWithValue("@ManuDate", ManuDate);
+            comm.Parameters.AddWithValue("@QuantOnHand", QuantOnHand);
+            comm.Parameters.AddWithValue("@Products3_ID", Products3_ID);
+
+            try
+            {
+                conn.Open();
+
+                intRecords = comm.ExecuteNonQuery();
+                strResult = intRecords.ToString() + " Records Updated.";
+            }
+            catch (Exception err)
+            {
+                strResult = "ERROR: " + err.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return strResult;
 
         }
 
