@@ -1,39 +1,13 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SE256_Brown_Masterbackend._Default" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="helpPage.aspx.cs" Inherits="SE256_Brown_Masterbackend.helpPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="BreakingNewsContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Products1" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="Products2" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="Content/HomePage.css" rel="stylesheet" />
-    
-
-    <!--cc
-    <div>
-        <h1>Home Page</h1>
-
-    </div>
-
-    <div>
-        <p>Our company name is Office Lovers</p>
-
-    </div>
-
-    <div>
-
-        <p>We sell all kinds of products here. Mostly office supplies and some other things.</p>
-
-    </div>-->
-
-    <!--codsmment-->
-
-    <!--first we need a header-->
-
-    <!--text: business logo, shop, deals, services, search field (text box maybe) with magnifiying glass-->
-
-    <!--also in header: three dots/lines for navigation, question mark for help, sign in (to login or create an account)-->
-
-    <!--also in header: shopping cart-->
-
-
-
 
 
     <header class="headRed"><!--beginning of header; give it a class of headRed  &nbsp;-->
@@ -187,7 +161,7 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
         <!--ink and toner menu/option; bring user to another page-->
-        <asp:Button ID="Button1" runat="server" Text="Ink and Toner" OnClick="inkPage"/>
+        <asp:Button ID="Button1" runat="server" Text="Ink and Toner" OnClick="Button1_Click"/>
 
 
 
@@ -223,155 +197,11 @@
 
     </header> <!--end of header-->
 
-    <br />
 
-    
+    <h1>Help Page</h1>
 
-    <!--buttons do not like -# pixels
-        i try to do:
-        margin-top: -40px; does not make a change on the website - like it should... -->
+    <p>add some info here</p>
 
-    
-
-    <!--big promotions/deals - maybe on some sort of slideshow or slider thing? "C:\Users\Brown\OneDrive\Desktop\myprojects\SE256_Brown_Masterbackend\Imagess\navimage1.jpg"-->
-
-    <div class="BigDeals1">
-
-        <div class="dealRect1">
-            <p>Deals/Promos</p>
-
-            <img src="Imgs/promo1.png" class="promo1" />
-        </div>
-        <div class="dealRect2">
-            <p>Deals/Promos</p>
-
-            <img src="Imgs/promo2.png" class="promo2" />
-        </div>
-        <div class="dealRect3">
-            <p>Deals/Promos</p>
-
-            <img src="Imgs/promo3.png" class="promo3" />
-        </div>
-
-    </div>
-
-    <br />
-    <br />
-
-    <div class="BigDeals2">
-        <div class="deals2rect1">
-            <p>Deals/Promos</p>
-
-            <img src="Imgs/promo4.jpg" class="promo4" />
-        </div>
-        <div class="deals2rect2">
-            <p>Deals/Promos</p>
-
-            <img src="Imgs/promo5.jpg" class="promo5" />
-        </div>
-        <div class="deals2rect3">
-            <p>Deals/Promos</p>
-
-            <img src="Imgs/promo6.png" class="promo6" />
-        </div>
-
-    </div>
-
-    <br />
-    <br />
-
-    <div class="someProducts">
-        <div class="prod1">
-            <p>Product1</p>
-
-            <img src="Imgs/navimage1.jpg" class="prodimg1" />
-
-            <!--commet-->
-
-            <!--dd
-                <img src="imagename.filename"/>
-                otheer stuff
-                -->
-        </div>
-        <div class="prod2">
-            <p>Product2</p>
-
-            <img src="Imgs/slideshow1.jpg" class="prodimg2" />
-        </div>
-        
-    </div>
-
-
-
-    <!--
-        drop down navigation - trying to get it to work - to move user to another page...
-        dd
-        -->
-
-
-    <button class="please">thingidsj</button>
-
-    
-    
-    
-    
-    <!--<asp:Label ID="something" runat="server" Text=":{-" CssClass="things" />-->
-
-    <!--What asp things/template stuff do not like negavite numbers in css styling?
-        Button
-        Label
-        Textbox
-        CheckBox(s)
-        Hyperlink
-        -->
-
-    <!--items that like negative numbers in css styling
-        nav trees
-        p tags
-        tables
-        -->
-
-    <!--<asp:CheckBox ID="CheckBox1" runat="server" Text="happy" CssClass="neg2" OnCheckedChanged="CheckBox1_CheckedChanged" />-->
-
-    <!--<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CssClass="link1">LinkButton</asp:LinkButton>-->
-    
-    <!--<asp:HyperLink ID="HyperLink1" runat="server" CssClass="link2">HyperLink</asp:HyperLink>-->
-
-    <p></p>
-    <p></p>
-    <p></p>
-
-    <!--input 
-        button (html)
-        
-        <input type="button" value="thing"
-
-        -->
-    <input type="button" value="please work" class="tryagain" />
-
-    <script src="Scripts/Home.js"></script>
-
-
-    
+    <p>to help people out if they get stuck</p>
 
 </asp:Content>
-
-
-
-
-<asp:Content ID="Content1" ContentPlaceHolderID="BreakingNewsContent" runat="server">
-    <!--Placeholder for breaking news content-->
-
-    <!--<div>-->
-        <!--<h1>Breaking News:</h1>-->
-        <!--<p>
-            After sharing his aweful brand of humor for decades, finds out that his jokes are not funny. Teacher shocked and amazed. His family and students request his face to be the image next to Dad-Jokes if it is added to dictionary.
-        </p>-->
-    <!--</div>-->
-
-
-</asp:Content>
-
-
-
-

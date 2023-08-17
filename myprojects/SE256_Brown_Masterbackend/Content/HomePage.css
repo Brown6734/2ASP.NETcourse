@@ -14,18 +14,8 @@
     background-color:cornsilk;
 }
 
-.some2{
-    box-sizing:border-box;
-    left: 50px;
-    
-    
-    max-width:50px;
-    margin-left: 800px;
 
 
-    border:5px solid gold;
-    
-}
 
 .shopTree{
     box-sizing:border-box;
@@ -62,6 +52,13 @@
     
 }
 
+.SearchBox {
+    box-sizing: border-box;
+    width: 75px;
+    margin-left: 470px;
+    border: 5px solid orange;
+}
+
 .spaces2{
     box-sizing:border-box;
     left:50px;
@@ -84,20 +81,7 @@
     
 }
 
-.SearchBox{
-    box-sizing:border-box;
-    left:50px;
-   
-    height:60px;
-    width:100px;
-    
-    margin-left:470px;
-    
-    margin-top:-50px;
 
-    
-    border:5px solid orange;
-}
 
 .NavTree{
     box-sizing:border-box;
@@ -416,4 +400,21 @@
 
     padding-top:-1px;
     
+}
+
+.please{
+    box-sizing:border-box;
+    left: 50px;
+    top: 50px;
+
+    height: 35px;
+    width: 183px;
+
+    border: 5px solid pink;
+
+    margin-left: 340px;
+    
+    
+    
+
 }

@@ -134,6 +134,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="helpPage.aspx" />
     <Content Include="Imgs\logotry1.png" />
     <Content Include="Imgs\navimage1.jpg" />
     <Content Include="Imgs\promo1.png" />
@@ -177,6 +178,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SetStore.aspx" />
+    <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -263,6 +265,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="helpPage.aspx.cs">
+      <DependentUpon>helpPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="helpPage.aspx.designer.cs">
+      <DependentUpon>helpPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="InkToners.aspx.cs">
       <DependentUpon>InkToners.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,6 +300,13 @@
     </Compile>
     <Compile Include="SetStore.aspx.designer.cs">
       <DependentUpon>SetStore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

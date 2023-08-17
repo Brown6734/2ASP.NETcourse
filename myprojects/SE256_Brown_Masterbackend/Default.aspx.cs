@@ -55,5 +55,15 @@ namespace SE256_Brown_Masterbackend
         {
 
         }
+
+        protected void helpButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/helpPage.aspx");
+        }
+
+        protected void shoppingCartButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ShoppingCart.aspx");
+        }
     }
 }
