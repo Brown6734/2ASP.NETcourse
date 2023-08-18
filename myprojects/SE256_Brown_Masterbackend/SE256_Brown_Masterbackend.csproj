@@ -119,6 +119,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\HomePage.css" />
+    <Content Include="Content\inks.css" />
     <Content Include="Content\Products.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
@@ -180,6 +181,7 @@
     <Content Include="SetStore.aspx" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="testPage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -321,6 +323,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="testPage.aspx.cs">
+      <DependentUpon>testPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testPage.aspx.designer.cs">
+      <DependentUpon>testPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

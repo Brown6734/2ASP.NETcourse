@@ -41,6 +41,13 @@
         <!--logo--> 
         <asp:Button ID="logoButton" runat="server" Text="logo" OnClick="logoButton_Click" CssClass="logoImage"/>
 
+        <br />
+
+        <a href="testPage.aspx">Test Page Link</a>
+
+
+        <br />
+
         <!--<asp:Image ID="Image1" runat="server" ImageUrl="~/Imgs/logotry1.png" Height="200px" Width="200px" />-->
 
         <p>I am currently working on fixing my header/improving the header.</p>

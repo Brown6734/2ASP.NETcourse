@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\myprojects",
+    "\\myprojects\\SE256_Brown_Masterbackend",
+    "\\myprojects\\SE256_Brown_Masterbackend\\Content"
   ],
-  "SelectedNode": "\\SE256_Brown_Masterbackend.sln",
+  "SelectedNode": "\\myprojects\\SE256_Brown_Masterbackend\\Content\\HomePage.css",
   "PreviewInSolutionExplorer": false
 }

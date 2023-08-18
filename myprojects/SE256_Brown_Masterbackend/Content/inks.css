@@ -1,0 +1,128 @@
+﻿body {
+}
+
+.box1 {
+    box-sizing: border-box;
+    max-width: 80px;
+    /*
+    margin-left: 500px;
+    margin-top: 10px;
+    */
+    margin-left: 500px;
+    border: 5px solid gold;
+}
+
+.button2{
+    box-sizing:border-box;
+    max-width: 80px;
+
+    /*
+    margin-left: 750px;
+    margin-top: 20px;
+    */
+    margin-left: 750px;
+    border: 5px solid navy;
+}
+
+.button3{
+    box-sizing: border-box;
+    max-width: 80px;
+
+    /*
+    margin-left: 850px;
+    margin-top: 40px;
+    */
+    margin-left: 800px;
+    border: 5px solid brown;
+}
+
+.button4{
+    box-sizing:border-box;
+    max-width: 80px;
+    /*margin-left: 950px;*/
+
+    /*
+    margin-left: 950px;
+    margin-top: 30px;
+    */
+    margin-left: 900px;
+    border: 5px solid pink;
+}
+
+.button1{
+    box-sizing:border-box;
+    
+    max-width: 75px;
+
+    margin-left: -1000px;
+    margin-top: 40px;
+
+    border: 5px solid green;
+
+}
+
+.Tree1{
+    box-sizing:border-box;
+
+    max-width: 100px;
+
+    margin-left: 80px;
+    margin-top: -30px;
+
+    border: 5px solid blue;
+}
+
+.aspace{
+    box-sizing:border-box;
+
+
+
+    max-width: 60px;
+
+    margin-left: 200px;
+
+    margin-top: -30px;
+    
+    border: 5px solid red;
+}
+
+.Tree2{
+    box-sizing: border-box;
+
+    max-width: 90px;
+    margin-left: 280px;
+
+    margin-top: -40px;
+    border: 5px solid purple;
+}
+
+.aSpace2{
+    box-sizing:border-box;
+    max-width: 60px;
+
+    margin-left: 410px;
+    margin-top: -50px;
+
+    border: 5px solid orange;
+}
+
+.Tree3{
+    box-sizing:border-box;
+
+    max-width: 90px;
+
+    margin-left: 600px;
+    margin-top: -40px;
+
+    border: 5px solid teal;
+}
+
+.Tree4{
+    box-sizing:border-box;
+    max-width: 90px;
+
+    margin-left: 700px;
+    margin-top: -50px;
+
+    border: 5px solid black;
+}
