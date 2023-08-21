@@ -219,40 +219,80 @@
             </Nodes>
         </asp:TreeView>
 
+        <asp:TreeView ID="pageLinks" runat="server">
+            <Nodes>
+                <asp:TreeNode Text="Other Page Links">
+                    <asp:TreeNode Text="About Page" NavigateUrl="~/About.aspx" />
+                    <asp:TreeNode Text="Contact Page" NavigateUrl ="~/Contact.aspx" />
+                    <asp:TreeNode Text="Default Page" NavigateUrl ="~/Default.aspx" />
+                    <asp:TreeNode Text="Help Page" NavigateUrl="~/helpPage.aspx" />
+                    <asp:TreeNode Text="Ink Toners Page" NavigateUrl="~/InkToners.aspx" />
+                    <asp:TreeNode Text="Reviews Page" NavigateUrl="~/Reviews.aspx" />
+                    <asp:TreeNode Text="Set Store Page" NavigateUrl="~/SetStore.aspx" />
+                    <asp:TreeNode Text="Shopping Cart Page" NavigateUrl="~/ShoppingCart.aspx" />
+                    <asp:TreeNode Text="test page" NavigateUrl="~/testPage.aspx" />
+                    <asp:TreeNode Text="backend" NavigateUrl ="~/Backend/Default.aspx" />
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
+
 
     </header> <!--end of header-->
 
-    <div class="ink1">
-        <p>Ink number one</p>
-    </div>
+    
 
-    <br />
-    <br />
+    <div>
+        <p>This page determines what ink or toner your printer needs</p>
 
-    <div class="ink2">
-        <p>Ink number two</p>
+        <p>Just put in which printer you have, and you will get the ink or toner you need</p>
 
-    </div>
-
-    <br />
-    <br />
-
-    <div class="toner1">
-        <p>Toner number one</p>
+        <p>the printers we can check are:
+            printer 1, printer 2, printer 3, printer 4, printer 5, and printer 6
+        </p>
 
     </div>
 
-    <br />
-    <br />
-
-    <div class="toner2">
-        <p>Toner number two</p>
-
-    </div>
+   
 
     <br /> <br />
     <br /> <br />
 
-    <asp:Button ID="loopButton" runat="server" Text="happy" OnClick="loopButton_Click"/>
+    <asp:Button ID="loopButton" runat="server" Text="test" OnClick="loopButton_Click"/>
+
+    <asp:TextBox ID="inkText" runat="server" Text="inks" />
+
+    <br />
+
+    <asp:TextBox ID="tonerText" runat="server" Text="toners" />
+
+    <br />
+
+    <asp:TextBox ID="printerText" runat="server" Text="printers" />
+
+    <br /> <br />
+    <br /> <br />
+
+    <asp:TextBox ID="stuff1" runat="server" Text="which printer?" />
+
+    <br /> <br />
+
+    <asp:TextBox ID="needNum" runat="server" MaxLength="3" />
+
+    <asp:RequiredFieldValidator ID="inkValid" runat="server" ControlToValidate="inkText" ErrorMessage="must be filled in" />
+
+    
+
+    <asp:RequiredFieldValidator ID="tonerValid" runat="server" ControlToValidate="tonerText" ErrorMessage="must not be empty" />
+
+    
+
+    <asp:RequiredFieldValidator ID="printerValid" runat="server" ControlToValidate="printerText" ErrorMessage="must not be empty" />
+    
+  
+
+    <asp:CompareValidator ID="numCompare" runat="server" ErrorMessage="invalid data type" ControlToValidate="needNum" Operator="DataTypeCheck" Type="Integer" />
+
+
+    
 
 </asp:Content>

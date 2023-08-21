@@ -45,5 +45,30 @@ namespace SE256_Brown_Masterbackend
 
             //someidk
         }
+
+        protected void updateCart_Click(object sender, EventArgs e)
+        {
+            Random items = new Random();
+
+            int cart = items.Next(1, 4);
+
+            if (cart == 1)
+            {
+                //update itemNum (and itemNum2) labels
+                itemNum.Text = "1 Item";
+                itemNum2.Text = "1 Item";
+            }
+            if (cart == 2)
+            {
+                itemNum.Text = "2 Items";
+                itemNum2.Text = "2 Items";
+            }
+            if (cart == 3)
+            {
+                itemNum.Text = "3 Items";
+                itemNum2.Text = "3 Items";
+            }
+
+        }
     }
 }

@@ -118,9 +118,19 @@
 
     
     margin-top: 100px;
+
+    
 }
 
+
+
 /*
+
+    $randomNumber: random(5);
+
+.thing {
+  animation-duration: $randomNumber + s;
+}
 
     <asp:RequiredFieldValidator ID="thding" runat="server" ControlToValidate="tthingg" ErrorMessage="mesoge" />
 

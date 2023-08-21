@@ -247,6 +247,26 @@
             </Nodes>
         </asp:TreeView>
 
+        <!--links to my other pages:-->
+
+        <br />
+
+        <asp:TreeView ID="pageLinks" runat="server">
+            <Nodes>
+                <asp:TreeNode Text="Other Page Links">
+                    <asp:TreeNode Text="About Page" NavigateUrl="~/About.aspx" />
+                    <asp:TreeNode Text="Contact Page" NavigateUrl ="~/Contact.aspx" />
+                    <asp:TreeNode Text="Default Page" NavigateUrl ="~/Default.aspx" />
+                    <asp:TreeNode Text="Help Page" NavigateUrl="~/helpPage.aspx" />
+                    <asp:TreeNode Text="Ink Toners Page" NavigateUrl="~/InkToners.aspx" />
+                    <asp:TreeNode Text="Reviews Page" NavigateUrl="~/Reviews.aspx" />
+                    <asp:TreeNode Text="Set Store Page" NavigateUrl="~/SetStore.aspx" />
+                    <asp:TreeNode Text="Shopping Cart Page" NavigateUrl="~/ShoppingCart.aspx" />
+                    <asp:TreeNode Text="test page" NavigateUrl="~/testPage.aspx" />
+                    <asp:TreeNode Text="backend" NavigateUrl ="~/Backend/Default.aspx" />
+                </asp:TreeNode>
+            </Nodes>
+        </asp:TreeView>
 
     </header> <!--end of header-->
 
@@ -334,24 +354,13 @@
 
         -->
 
-    <asp:TextBox ID="oneBox" runat="server" CssClass="athing" Text="help" />
+    
 
-    <asp:RequiredFieldValidator ID="valid1" runat="server" ControlToValidate="oneBox" ErrorMessage="not good" />
+   
 
-    <asp:TextBox ID="stuff2" runat="server" />
+    
 
-    <asp:RequiredFieldValidator ID="valid2" runat="server" ControlToValidate="stuff2" ErrorMessage="must be filled in" />
-
-    <asp:TextBox ID="another" runat="server" CssClass="great" Text="dsfoij" />
-
-    <asp:RegularExpressionValidator ID="valid3" runat="server" ErrorMessage="bad. very bad" ControlToValidate="another" VadliationExpression="[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+" ></asp:RegularExpressionValidator>
-
-    <asp:TextBox ID="txtNum" runat="server" MaxLength="3" />
-
-    <asp:CompareValidator ID="valid4" runat="server" ErrorMessage="invalid data type"  ControlToValidate="txtNum" Operator="DataTypeCheck" Type="Integer" />
-
-    <asp:ValidationSummary ID="valid5" runat="server" ShowMessageBox="true" />
-
+   
 
     <br /> <br />
     <br /> <br />

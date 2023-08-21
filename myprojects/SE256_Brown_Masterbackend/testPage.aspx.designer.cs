@@ -15,6 +15,15 @@ namespace SE256_Brown_Masterbackend
     {
 
         /// <summary>
+        /// pageLinks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TreeView pageLinks;
+
+        /// <summary>
         /// thingButton control.
         /// </summary>
         /// <remarks>
