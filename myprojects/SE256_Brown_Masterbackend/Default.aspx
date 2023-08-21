@@ -39,8 +39,14 @@
     <header class="headRed"><!--beginning of header; give it a class of headRed  &nbsp;-->
         
         <!--logo--> 
-        <asp:Button ID="logoButton" runat="server" Text="logo" OnClick="logoButton_Click" CssClass="logoImage"/>
 
+        <asp:TreeView ID="logoTree" runat="server" CssClass="logoButton">
+            <Nodes>
+                <asp:TreeNode Text="logo" NavigateUrl="~/Default.aspx"/>
+            </Nodes>
+
+        </asp:TreeView>
+        
         <br />
 
         <a href="testPage.aspx">Test Page Link</a>
@@ -49,12 +55,6 @@
         <br />
 
         <!--<asp:Image ID="Image1" runat="server" ImageUrl="~/Imgs/logotry1.png" Height="200px" Width="200px" />-->
-
-        <p>I am currently working on fixing my header/improving the header.</p>
-
-
-
-        
 
         <!--shop dropdown 
         <asp:DropDownList ID="shopdrop" runat="server" >
@@ -99,7 +99,7 @@
             </Nodes>
         </asp:TreeView>
 
-        <asp:TextBox ID="textSearch" runat="server"  Text="Search" CssClass="SearchBox" />
+        
         
 
         <!--services dropdown-->
@@ -143,19 +143,31 @@
 
         <!--help icon/question mark - button-->
 
-        <asp:Button ID="helpButton" runat="server" Text="?" CssClass="helpIcon" OnClick="helpButton_Click"/>
+        <asp:TreeView ID="helpTree" runat="server" CssClass="helpIcon">
+            <Nodes>
+                <asp:TreeNode Text="?" />
+            </Nodes>
+        </asp:TreeView>
 
         
 
         <!--sign in button/login in; brings user to login page (mabye backend one for now)-->
 
-        <asp:Button ID="loginButton" runat="server" Text="Sign In" OnClick="loginButton_Click"/>
+        <asp:TreeView ID="signTree" runat="server" CssClass="loginButton">
+            <Nodes>
+                <asp:TreeNode Text="Sign In" NavigateUrl="~/Backend/Default.aspx"/>
+            </Nodes>
+        </asp:TreeView>
 
         
 
-        <!--shopping cart button-->
+        <!--shopping cart button 🛒-->
 
-        <asp:Button ID="shoppingCartButton" runat="server" Text="🛒" OnClick="shoppingCartButton_Click"/>
+        <asp:TreeView ID="cartTree" runat="server" CssClass="shoppingCart">
+            <Nodes>
+                <asp:TreeNode Text="🛒" NavigateUrl="~/ShoppingCart.aspx" />
+            </Nodes>
+        </asp:TreeView>
 
 
       
@@ -166,7 +178,7 @@
         <!--for business dropdown-->
         
 
-        &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <asp:TreeView ID="TreeView6" runat="server" CssClass="BusTree">
             <Nodes>
@@ -191,25 +203,29 @@
             </Nodes>
         </asp:TreeView>
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--ink and toner menu/option; bring user to another page-->
-        <asp:Button ID="Button1" runat="server" Text="Ink and Toner" OnClick="inkPage"/>
+        
+        <asp:TreeView ID="inkTree" runat="server" CssClass="inkToner">
+            <Nodes>
+                <asp:TreeNode Text="Ink & Toner" NavigateUrl="~/InkToners.aspx" />
+            </Nodes>
+        </asp:TreeView>
 
 
 
         <!--space space space-->
-        &nbsp; &nbsp; &nbsp; &nbsp; 
+        
 
-        <!--buy it again-->
-        <asp:Button ID="Button2" runat="server" Text="Buy it Again" />
+        
 
-        &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--ideas -->
         
 
-        &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--orders dropdown-->
 
@@ -222,10 +238,15 @@
             </Nodes>
         </asp:TreeView>
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
 
         <!--set your store-->
-        <asp:Button ID="SetStoreBtn" runat="server" Text="Set Your Store" OnClick="SetStoreBtn_Click"/>
+        
+        <asp:TreeView ID="setStoreID" runat="server" CssClass="storeSet">
+            <Nodes>
+                <asp:TreeNode Text="Set Your Store" NavigateUrl="~/SetStore.aspx" />
+            </Nodes>
+        </asp:TreeView>
 
 
     </header> <!--end of header-->

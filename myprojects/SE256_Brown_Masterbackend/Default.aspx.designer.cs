@@ -15,13 +15,13 @@ namespace SE256_Brown_Masterbackend
     {
 
         /// <summary>
-        /// logoButton control.
+        /// logoTree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logoButton;
+        protected global::System.Web.UI.WebControls.TreeView logoTree;
 
         /// <summary>
         /// Image1 control.
@@ -69,15 +69,6 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.TreeView TreeView3;
 
         /// <summary>
-        /// textSearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textSearch;
-
-        /// <summary>
         /// TreeView4 control.
         /// </summary>
         /// <remarks>
@@ -96,31 +87,31 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.TreeView TreeView5;
 
         /// <summary>
-        /// helpButton control.
+        /// helpTree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button helpButton;
+        protected global::System.Web.UI.WebControls.TreeView helpTree;
 
         /// <summary>
-        /// loginButton control.
+        /// signTree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button loginButton;
+        protected global::System.Web.UI.WebControls.TreeView signTree;
 
         /// <summary>
-        /// shoppingCartButton control.
+        /// cartTree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button shoppingCartButton;
+        protected global::System.Web.UI.WebControls.TreeView cartTree;
 
         /// <summary>
         /// TreeView6 control.
@@ -141,22 +132,13 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.TreeView TreeView7;
 
         /// <summary>
-        /// Button1 control.
+        /// inkTree control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
-        /// Button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.TreeView inkTree;
 
         /// <summary>
         /// TreeView8 control.
@@ -168,13 +150,13 @@ namespace SE256_Brown_Masterbackend
         protected global::System.Web.UI.WebControls.TreeView TreeView8;
 
         /// <summary>
-        /// SetStoreBtn control.
+        /// setStoreID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SetStoreBtn;
+        protected global::System.Web.UI.WebControls.TreeView setStoreID;
 
         /// <summary>
         /// something control.

@@ -368,3 +368,4 @@ C:\Users\Brown\Source\Repos\2ASP.NETcourse\myprojects\SE256_Brown_Masterbackend\
 C:\Users\Brown\Source\Repos\2ASP.NETcourse\myprojects\SE256_Brown_Masterbackend\obj\Debug\SE256_Brown_Masterbackend.csproj.CopyComplete
 C:\Users\Brown\Source\Repos\2ASP.NETcourse\myprojects\SE256_Brown_Masterbackend\obj\Debug\SE256_Brown_Masterbackend.dll
 C:\Users\Brown\Source\Repos\2ASP.NETcourse\myprojects\SE256_Brown_Masterbackend\obj\Debug\SE256_Brown_Masterbackend.pdb
+C:\Users\Brown\source\repos\2ASP.NETcourse\myprojects\SE256_Brown_Masterbackend\bin\Content\HomePage.css

@@ -9,15 +9,25 @@
 
     <link href="Content/inks.css" rel="stylesheet" />
 
-    <asp:TextBox ID="text1" runat="server" Text="stuff" CssClass="box1" />
 
-    <asp:Button ID="thingButton" runat="server" Text="{}" CssClass="button2" />
 
-    <asp:Button ID="greatButton" runat="server" Text="\\" CssClass="button3" />
+    <!--<asp:Button ID="thingButton" runat="server" Text="{}" CssClass="button2" />-->
 
-    <asp:Button ID="imageButton" runat="server" Text="#^$" CssClass="button4" />
+    <!--<asp:Button ID="greatButton" runat="server" Text="\\" CssClass="button3" />-->
 
-    <asp:Button ID="someButton" runat="server" Text="ths" CssClass="button1" />
+    <!--<asp:Button ID="imageButton" runat="server" Text="#^$" CssClass="button4" />-->
+
+    <!--<asp:Button ID="someButton" runat="server" Text="ths" CssClass="button1" />-->
+
+    
+
+    <asp:TreeView ID="TreeView8" runat="server" CssClass="button1" >
+        <Nodes>
+            <asp:TreeNode Text="logo" Value="logo" />
+        </Nodes>
+    </asp:TreeView>
+
+   
 
     <asp:TreeView ID="TreeView1" runat="server" CssClass="Tree1">
 
@@ -73,9 +83,31 @@
 
     </asp:TreeView>
 
+    <asp:TreeView ID="TreeView5" runat="server" CssClass="button2" >
+        <Nodes>
+            <asp:TreeNode Text="hed" />
+        </Nodes>
+
+    </asp:TreeView>
+
+    <asp:TreeView ID="TreeView6" runat="server" CssClass="button3">
+        <Nodes>
+            <asp:TreeNode Text="fds" Value="fds" />
+        </Nodes>
+
+    </asp:TreeView>
+
+    <asp:TreeView ID="TreeView7" runat="server" CssClass="button4" >
+        <Nodes>
+            <asp:TreeNode Text="563" Value="563" />
+        </Nodes>
+
+    </asp:TreeView>
     
 
     <br />
+
+
 
 
 

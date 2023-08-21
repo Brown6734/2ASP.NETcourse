@@ -14,28 +14,11 @@ namespace SE256_Brown_Masterbackend
 
         }
 
-        protected void inkPage(object sender, EventArgs e)
-        {
-            //Response.Redirect("~/Backend/Default.aspx");
+        
 
-            Response.Redirect("~/InkToners.aspx");
-        }
+        
 
-        protected void loginButton_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Backend/Default.aspx");
-        }
-
-        protected void SetStoreBtn_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/SetStore.aspx");
-        }
-
-        protected void logoButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+       
         protected void shopdrop_SelectedIndexChanged(object sender, EventArgs e)
         {
             Response.Redirect("~/InkToners.aspx");
@@ -61,9 +44,6 @@ namespace SE256_Brown_Masterbackend
             Response.Redirect("~/helpPage.aspx");
         }
 
-        protected void shoppingCartButton_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/ShoppingCart.aspx");
-        }
+        
     }
 }

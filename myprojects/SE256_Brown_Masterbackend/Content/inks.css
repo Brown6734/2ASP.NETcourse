@@ -1,128 +1,83 @@
 ﻿body {
 }
 
-.box1 {
+.button1 {
     box-sizing: border-box;
     max-width: 80px;
-    /*
-    margin-left: 500px;
-    margin-top: 10px;
-    */
-    margin-left: 500px;
-    border: 5px solid gold;
-}
-
-.button2{
-    box-sizing:border-box;
-    max-width: 80px;
-
-    /*
-    margin-left: 750px;
-    margin-top: 20px;
-    */
-    margin-left: 750px;
-    border: 5px solid navy;
-}
-
-.button3{
-    box-sizing: border-box;
-    max-width: 80px;
-
-    /*
-    margin-left: 850px;
-    margin-top: 40px;
-    */
-    margin-left: 800px;
-    border: 5px solid brown;
-}
-
-.button4{
-    box-sizing:border-box;
-    max-width: 80px;
-    /*margin-left: 950px;*/
-
-    /*
-    margin-left: 950px;
+    margin-left: 20px;
     margin-top: 30px;
-    */
-    margin-left: 900px;
     border: 5px solid pink;
 }
 
-.button1{
-    box-sizing:border-box;
-    
-    max-width: 75px;
 
-    margin-left: -1000px;
-    margin-top: 40px;
-
-    border: 5px solid green;
-
-}
-
-.Tree1{
-    box-sizing:border-box;
-
+.Tree1 {
+    box-sizing: border-box;
     max-width: 100px;
-
-    margin-left: 80px;
+    margin-left: 120px;
     margin-top: -30px;
-
     border: 5px solid blue;
 }
 
-.aspace{
-    box-sizing:border-box;
-
-
-
+.aspace {
+    box-sizing: border-box;
     max-width: 60px;
-
-    margin-left: 200px;
-
+    margin-left: 240px;
     margin-top: -30px;
-    
     border: 5px solid red;
 }
 
-.Tree2{
+.Tree2 {
     box-sizing: border-box;
-
     max-width: 90px;
-    margin-left: 280px;
-
+    margin-left: 320px;
     margin-top: -40px;
     border: 5px solid purple;
 }
 
-.aSpace2{
-    box-sizing:border-box;
+.aSpace2 {
+    box-sizing: border-box;
     max-width: 60px;
-
-    margin-left: 410px;
+    margin-left: 450px;
     margin-top: -50px;
-
     border: 5px solid orange;
 }
 
-.Tree3{
-    box-sizing:border-box;
-
+.Tree3 {
+    box-sizing: border-box;
     max-width: 90px;
-
-    margin-left: 600px;
+    margin-left: 520px;
     margin-top: -40px;
-
     border: 5px solid teal;
 }
 
-.Tree4{
-    box-sizing:border-box;
+.Tree4 {
+    box-sizing: border-box;
     max-width: 90px;
-
-    margin-left: 700px;
-    margin-top: -50px;
-
+    margin-left: 620px;
+    margin-top: -55px;
     border: 5px solid black;
+}
+
+.button2 {
+    box-sizing: border-box;
+    max-width: 60px;
+    margin-left: 720px;
+    margin-top: -50px;
+    border: 5px solid darkmagenta;
+}
+
+.button3 {
+    box-sizing: border-box;
+    max-width: 60px;
+    margin-left: 790px;
+    margin-top: -30px;
+    border: 5px solid fuchsia;
+}
+
+.button4 {
+    box-sizing: border-box;
+    max-width: 60px;
+    margin-left: 860px;
+    margin-top: -30px;
+    border: 5px solid darkblue;
 }
