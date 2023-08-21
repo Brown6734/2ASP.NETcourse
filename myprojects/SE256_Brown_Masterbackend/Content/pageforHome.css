@@ -1,0 +1,144 @@
+﻿body {
+}
+
+
+/**/
+
+
+.dealRect1 {
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    background-color: brown;
+    color: white;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.promo1 {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 5px solid gold;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.dealRect2 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 20px;
+    background-color: darkblue;
+    color: white;
+    margin-left: 260px;
+    margin-top: -20px;
+}
+
+.promo2 {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    border: 5px solid blue;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.dealRect3 {
+    box-sizing: border-box;
+    width: 100px;
+    height: 20px;
+    background-color: darkgreen;
+    color: white;
+    margin-left: 570px;
+    margin-top: -20px;
+}
+
+.promo3 {
+    box-sizing: border-box;
+    width: 200px;
+    height: 150px;
+}
+
+.deals2rect1 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 20px;
+    background-color: darkred;
+    color: white;
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.promo4 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.deals2rect2 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 20px;
+    background-color: darkmagenta;
+    color: white;
+    margin-top: -20px;
+    margin-left: 230px;
+}
+
+.promo5 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.deals2rect3{
+    box-sizing: border-box;
+    width: 150px;
+    height: 20px;
+    background-color: indigo;
+    color: white;
+    margin-top: -20px;
+    margin-left: 420px;
+}
+
+.promo6 {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+
+.footer2{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+
+    
+    margin-top: 100px;
+}
+
+/*
+
+    <asp:RequiredFieldValidator ID="thding" runat="server" ControlToValidate="tthingg" ErrorMessage="mesoge" />
+
+        ControlToValidate = an ID property of a previous element on page
+
+        <asp:RegularExpressionValidator ID="thing" runat="server" ErrorMessage="thing" ControlToValidate="thing" ValidationExpression="[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+">
+    "[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+
+
+        </ending>
+
+        <asp:CompareValidator ID="thing" runat="server" ErrorMessage="message" ControlToValidate="ID property of previous element" Operator="DataTypeCheck or something else" Type="integer or another data type format" />
+
+    compareValidator thing:
+    <asp:TextBox ID="txtNum" runat="server" MaxLength="3" />
+
+    <asp:CompareValidator ID="valid#" runat="server" ErrorMessage="message" ControlToValidate="txtNum" Operator="" Type="" />
+
+
+        <asp:ValidationSummary ID="thing" runat="server' ShowMessageBox="True" />
+
+*/

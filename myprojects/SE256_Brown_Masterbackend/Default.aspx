@@ -2,8 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <link href="Content/HomePage.css" rel="stylesheet" />
-    
+    <link href="Content/pageforHome.css" rel="stylesheet" />
 
     <!--cc
     <div>
@@ -308,27 +307,57 @@
     <br />
     <br />
 
-    <div class="someProducts">
-        <div class="prod1">
-            <p>Product1</p>
-
-            <img src="Imgs/navimage1.jpg" class="prodimg1" />
-
-            <!--commet-->
-
-            <!--dd
-                <img src="imagename.filename"/>
-                otheer stuff
-                -->
-        </div>
-        <div class="prod2">
-            <p>Product2</p>
-
-            <img src="Imgs/slideshow1.jpg" class="prodimg2" />
-        </div>
+    <!--common validator properties:
         
-    </div>
+        ControlToValidate
+        Display
+        ErrorMessage
+        Text
+        Enabled
+        EnableClientScript
+        ValidationGroup
+        IsValid
+        -------------
 
+
+
+        
+
+        -->
+
+    <!--dd
+        
+        can do
+        <asp:TextBox stuff>
+       
+        then validation
+
+        -->
+
+    <asp:TextBox ID="oneBox" runat="server" CssClass="athing" Text="help" />
+
+    <asp:RequiredFieldValidator ID="valid1" runat="server" ControlToValidate="oneBox" ErrorMessage="not good" />
+
+    <asp:TextBox ID="stuff2" runat="server" />
+
+    <asp:RequiredFieldValidator ID="valid2" runat="server" ControlToValidate="stuff2" ErrorMessage="must be filled in" />
+
+    <asp:TextBox ID="another" runat="server" CssClass="great" Text="dsfoij" />
+
+    <asp:RegularExpressionValidator ID="valid3" runat="server" ErrorMessage="bad. very bad" ControlToValidate="another" VadliationExpression="[\w\.-]+(\+[\w-]*)?@([\w-]+\.)+[\w-]+" ></asp:RegularExpressionValidator>
+
+    <asp:TextBox ID="txtNum" runat="server" MaxLength="3" />
+
+    <asp:CompareValidator ID="valid4" runat="server" ErrorMessage="invalid data type"  ControlToValidate="txtNum" Operator="DataTypeCheck" Type="Integer" />
+
+    <asp:ValidationSummary ID="valid5" runat="server" ShowMessageBox="true" />
+
+
+    <br /> <br />
+    <br /> <br />
+    <br /> <br />
+
+    <p class="footer2">&nbsp;</p>
 
 
     <!--
@@ -337,7 +366,7 @@
         -->
 
 
-    <button class="please">thingidsj</button>
+   
 
     
     
@@ -365,17 +394,14 @@
     
     <!--<asp:HyperLink ID="HyperLink1" runat="server" CssClass="link2">HyperLink</asp:HyperLink>-->
 
-    <p></p>
-    <p></p>
-    <p></p>
-
+   
     <!--input 
         button (html)
         
         <input type="button" value="thing"
 
         -->
-    <input type="button" value="please work" class="tryagain" />
+    
 
     <script src="Scripts/Home.js"></script>
 

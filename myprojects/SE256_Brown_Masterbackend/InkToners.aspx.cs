@@ -28,5 +28,33 @@ namespace SE256_Brown_Masterbackend
         {
             Response.Redirect("~/SetStore.aspx");
         }
+
+        protected void loopButton_Click(object sender, EventArgs e)
+        {
+            //this will determine what ink or toner the user needs for their machine/printer
+            //will include made up ink/toner products
+            //and made up printer products
+
+            //string variable = "ink"
+
+            //c sharp random:
+            //Random name = new Random();
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+            //
+
+
+
+
+
+        }
     }
 }
