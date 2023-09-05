@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\myprojects",
-    "\\myprojects\\SE256_Brown_Masterbackend",
-    "\\myprojects\\SE256_Brown_Masterbackend\\Content"
+    "\\SE256_Brown_RazorActivity",
+    "\\SE256_Brown_RazorActivity\\Pages"
   ],
-  "SelectedNode": "\\myprojects\\SE256_Brown_Masterbackend\\testPage.aspx",
+  "SelectedNode": "\\SE256_Brown_RazorActivity\\Pages\\AddTicket.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }

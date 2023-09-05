@@ -1,0 +1,201 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.ProdTitle</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<!--dd
+    
+    _Layout.cshtml
+
+    Layout allows us to add a common layout and C# functionality for each of our pages in our site
+
+    add (for lab, change it up)
+
+    <li class='nav-item'>
+        <a class='nav-link text-[color]' asp-area="" asp-page="/[pageName]">words </a>
+
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link text-[color]" asp-area="" asp-page"/loginpage">Login</a>
+    </li>
+
+
+    Index.cshtml :
+
+    add
+
+    atS page
+    atS model IndexModel
+    atS{
+        ViewData["Title"] = "Home Page";
+    }
+
+    Index.cshtml.cs part:
+
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.RazorPages;
+
+    namespace title.Pages{
+    
+        public class IndexModel: Page Model{
+            [BindProperty(SupportsGet = true)]
+
+            public String value/Name {get; set;}
+            
+    
+            public void OnGet(){
+            }
+
+
+    
+        }
+    
+    }
+
+    
+    add to Index.cshtml:
+
+    <h1 class="display-4">Welcome atS Model.value</h1>
+
+    add to Index.cshtml.cs:
+
+    public void OnGet(){
+        if(string.IsNullOrWhiteSpace(stringValue)){
+            
+            stringValue = "word";
+        
+        }
+    
+    
+    }
+
+
+    add to Pages:
+
+    Pages, add, New Folder
+
+    Name the new subfolder "Admin"
+
+    Lab/Overall name, Add, New Folder
+
+    Name this folder "Models"
+
+    Models, Add, Class
+
+    Class name = something pertaining to the lab (for now - examples)
+
+    add to examples.cs:
+
+    namespace ...{
+        
+
+        public class name{
+            
+            public int value {get; set;}
+
+            public string value {get; set;}
+
+            public DateTime value {get; set;}
+
+            public string value {get; set;}
+
+            public bool value {get; set;}
+
+    
+        }
+    
+    
+    }
+
+    Pages, add, Razor Page
+
+    Razor page v1.0.0.0
+
+    Name - something pertaining to lab (for now it will be AddExample)
+
+    AddExample.cshtml:
+
+    atS page
+    atS model pageName.Pages.addNameModel
+    atS{
+        ViewData["Title"] = "AddExample";
+    }
+
+
+    AddExample.cshtml.cs:
+
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.RazorPages;
+
+    using labName.Models;
+
+    public class nameModel: PageModel{
+        
+        [BindProperty]
+
+        public nameModel modelValue {get; set;}
+    
+    
+    }
+
+    AddExample.cshtml:
+
+    <form method="post">
+
+        <input type="text" asp-for="modelValue.prop" placeholder="word">
+    do as many inputs as needed
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    AddExample.cshtml.cs:
+
+    public IActionResult OnPost(){
+    
+        IActionResult temp;
+
+        if(ModelState.IsValid == false){
+        
+            temp = Page();
+        
+        }
+        else{
+        
+            temp = RedirectToPage(" /Index");
+        
+        }
+        
+        return temp;
+    
+    }
+
+    modify _Layout.cshtml:
+
+    asp-Page="/AddExample">Add Example </a>
+
+
+    AddExample.cshtml:
+
+    atS{
+        if(Model.value is null == false){
+            <h1>Results</h1>
+
+            <p>AtS Model.value.prop</p>
+            <p>AtS Model.value.prop</p>
+
+    
+        }
+    
+    }
+
+    
+    -->

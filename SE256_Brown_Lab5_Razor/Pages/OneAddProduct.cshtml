@@ -1,0 +1,27 @@
+﻿@page
+@model SE256_Brown_Lab5_Razor.Pages.OneAddProductModel
+@{
+    ViewData["Title"] = "OneAddProduct";
+}
+
+<form method="post">
+
+    <input type="text" asp-for="aProduct.Product_Title" placeholder="title" />
+    <input type="text" asp-for="aProduct.Product_Desc" placeholder="desc" />
+    <input type="text" asp-for="aProduct.Product_Category" placeholder="product category here" />
+
+    <button type="submit">Submit</button>
+
+
+</form>
+
+@{ 
+    if(Model.aProduct is null == false)
+            {
+                <h1>Results</h1>
+
+                <p>@Model.aProduct.Product_Title</p>
+                <p>@Model.aProduct.Product_Category</p>
+            }
+
+}
