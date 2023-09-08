@@ -54,5 +54,7 @@ namespace SE256_Brown_RazorActivity.Models
 
         [Required]
         public bool Active { get; set; }
+
+        public String Feedback { get; set; }
     }
 }
