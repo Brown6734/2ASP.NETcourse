@@ -6,14 +6,33 @@
 
 <form method="post">
 
-    <input type="text" asp-for="aProduct.Product_Title" placeholder="title" />
-    <input type="text" asp-for="aProduct.Product_Desc" placeholder="desc" />
-    <input type="text" asp-for="aProduct.Product_Category" placeholder="product category here" />
+    <div class="form-group">
+        <label asp-for="aProduct.Product_Title"></label>
+        <input asp-for="aProduct.Product_Title" type="text" class="form-control" placeholder="Brief Product Title" />
+        <span asp-validation-for="aProduct.Product_Title" class="text-danger"></span>
+    </div>
 
-    <button type="submit">Submit</button>
+    <div class="form-group">
+        <label asp-for="aProduct.Product_Desc"></label>
+        <input asp-for="aProduct.Product_Desc" type="text" class="form-control" placeholder="Description of Product" />
+        <span asp-validation-for="aProduct.Product_Desc" class="text-danger"></span>
 
+    </div>
+
+    <div class="form-group">
+        <label asp-for="aProduct.Product_Category"></label>
+        <input asp-for="aProduct.Product_Category" type="text" class="form-control" placeholder="category" />
+        <span asp-validation-for="aProduct.Product_Category" class="text-danger"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
 
 </form>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 @{ 
     if(Model.aProduct is null == false)
@@ -21,7 +40,7 @@
                 <h1>Results</h1>
 
                 <p>@Model.aProduct.Product_Title</p>
-                <p>@Model.aProduct.Product_Category</p>
+                    <p>@Model.aProduct.Product_Category</p>
             }
 
 }

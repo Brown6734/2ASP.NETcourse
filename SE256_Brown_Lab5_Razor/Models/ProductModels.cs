@@ -22,11 +22,21 @@ namespace SE256_Brown_Lab5_Razor.Models
         public String Product_Desc { get; set; }
 
         [Required]
+        [StringOptionsValidate(Allowed = new String[] {"Cat1", "Cat2", "Cat3", "Cat4"}, ErrorMessage = "Sorry.. category is invalid. Can only be: Cat1, Cat2, Cat3, Cat4")]
 
         public String Product_Category { get; set; }
 
+        [Required, EmailAddress]
+        public String ProdEmail { get; set; }
+
+
+        [Required]
+        [Display(Name = "original date of manufacture for the product ")]
+        [MyDate(ErrorMessage = "Future date entry not allowed")]
+
         public DateTime Manu_Date { get; set; }
 
+        [Required]
         public bool Active { get; set; }
 
         //public int (at least 1)
