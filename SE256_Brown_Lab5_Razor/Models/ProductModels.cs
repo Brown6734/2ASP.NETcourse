@@ -29,15 +29,22 @@ namespace SE256_Brown_Lab5_Razor.Models
         [Required, EmailAddress]
         public String ProdEmail { get; set; }
 
+        [Required,EmailAddress]
+
+        public String userEmail { get; set; }
+
 
         [Required]
         [Display(Name = "original date of manufacture for the product ")]
+        [DataType(DataType.DateTime), DisplayFormat(DataFormatString = "{0:MM/dd/yyy hh:mm:ss tt}", ApplyFormatInEditMode = true)]
         [MyDate(ErrorMessage = "Future date entry not allowed")]
 
         public DateTime Manu_Date { get; set; }
 
         [Required]
         public bool Active { get; set; }
+
+        public String Feedback { get; set; }
 
         //public int (at least 1)
         //public String (at least 2)

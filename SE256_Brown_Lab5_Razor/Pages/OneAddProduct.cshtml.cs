@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SE256_Brown_Lab5_Razor.Models;
 
+using Microsoft.Extensions.Configuration;
+
 namespace SE256_Brown_Lab5_Razor.Pages
 {
     public class OneAddProductModel : PageModel
@@ -14,7 +16,14 @@ namespace SE256_Brown_Lab5_Razor.Pages
 
         public ProductModels aProduct { get; set; }
 
-        public void OnGet()
+        private readonly IConfiguration _configuration;
+
+        public OneAddProductModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+    }
+
+    public void OnGet()
         {
         }
 
@@ -22,12 +31,18 @@ namespace SE256_Brown_Lab5_Razor.Pages
         {
             IActionResult temp;
 
-            if(ModelState.IsValid == false)
+            if (ModelState.IsValid == false)
             {
                 temp = Page();
             }
             else
             {
+                if(aProduct is null == false)
+                {
+                    ProductDataAccessLayer factory = new ProductDataAccessLayer(_configuration);
+
+                    factory.Create(aProduct);
+                }
                 temp = Page();
             }
 

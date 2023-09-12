@@ -3,8 +3,9 @@
     "",
     "\\SE256_Brown_Lab5_Razor",
     "\\SE256_Brown_Lab5_Razor\\Pages",
+    "\\SE256_Brown_RazorActivity",
     "\\SE256_Brown_RazorActivity\\Pages"
   ],
-  "SelectedNode": "\\SE256_Brown_Lab5_Razor\\Pages\\Index.cshtml",
+  "SelectedNode": "\\SE256_Brown_RazorActivity\\Pages\\AddTicket.cshtml",
   "PreviewInSolutionExplorer": false
 }

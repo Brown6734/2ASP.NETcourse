@@ -4,6 +4,8 @@
     ViewData["Title"] = "OneAddProduct";
 }
 
+<h1>AddProduct</h1>
+
 <form method="post">
 
     <div class="form-group">
@@ -26,6 +28,12 @@
 
     </div>
 
+    <div class="form-group">
+        <label asp-for="aProduct.ProdEmail"></label>
+        <input asp-for="aProduct.ProdEmail" type="text" class="form-control" placeholder="enter Email" />
+        <span asp-validation-for="aProduct.ProdEmail" class="text-danger"></span>
+    </div>
+
     <button type="submit" class="btn btn-primary">Submit</button>
 
 </form>
@@ -34,13 +42,33 @@
 <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
+
+<!---->
+
+
+<!--atS{ -->
+   <!-- if(Model.aProduct != null && Model.aProduct.Feedback != null) -->
+    <!--{-->
+            <!--    <h1>Results</h1> -->
+              <!--  <p>atS Model.aProduct.Feedback</p> -->
+   <!-- } -->
+<!-- } -->
+
 @{ 
+    if(Model.aProduct != null && Model.aProduct.Feedback != null)
+            {
+                <h1>Results</h1>
+                <p>@Model.aProduct.Feedback</p>
+                <p>Please Show Up!!</p>
+            }
+}
+
+<!--atS { 
     if(Model.aProduct is null == false)
             {
                 <h1>Results</h1>
-
-                <p>@Model.aProduct.Product_Title</p>
-                    <p>@Model.aProduct.Product_Category</p>
+                <p>atS Model.aProduct.Product_Title</p>
+                <p>atS Model.aProduct.ProdEmail</p>
             }
+}-->
 
-}
