@@ -16,6 +16,7 @@ namespace SE256_Brown_Lab5_Razor.Pages
 
         public ProductModels aProduct { get; set; }
 
+
         private readonly IConfiguration _configuration;
 
         public OneAddProductModel(IConfiguration configuration)
@@ -29,6 +30,8 @@ namespace SE256_Brown_Lab5_Razor.Pages
 
         public IActionResult OnPost()
         {
+            aProduct.Feedback = "1 Record Added";
+
             IActionResult temp;
 
             if (ModelState.IsValid == false)
@@ -39,6 +42,8 @@ namespace SE256_Brown_Lab5_Razor.Pages
             {
                 if(aProduct is null == false)
                 {
+                    
+
                     ProductDataAccessLayer factory = new ProductDataAccessLayer(_configuration);
 
                     factory.Create(aProduct);

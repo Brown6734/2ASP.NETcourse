@@ -44,26 +44,26 @@
 
 
 <!---->
-
-
 <!--atS{ -->
-   <!-- if(Model.aProduct != null && Model.aProduct.Feedback != null) -->
-    <!--{-->
-            <!--    <h1>Results</h1> -->
-              <!--  <p>atS Model.aProduct.Feedback</p> -->
-   <!-- } -->
+<!-- if(Model.aProduct != null && Model.aProduct.Feedback != null) -->
+<!--{-->
+<!--    <h1>Results</h1> -->
+<!--  <p>atS Model.aProduct.Feedback</p> -->
+<!-- } -->
 <!-- } -->
 
-@{ 
-    if(Model.aProduct != null && Model.aProduct.Feedback != null)
-            {
-                <h1>Results</h1>
-                <p>@Model.aProduct.Feedback</p>
-                <p>Please Show Up!!</p>
-            }
+
+
+@{
+    if (Model.aProduct != null && Model.aProduct.Feedback != null)
+    {
+        <h1>Results</h1>
+        <p>@Model.aProduct.Feedback</p>
+        
+    }
 }
 
-<!--atS { 
+<!--atS {
     if(Model.aProduct is null == false)
             {
                 <h1>Results</h1>
@@ -71,4 +71,3 @@
                 <p>atS Model.aProduct.ProdEmail</p>
             }
 }-->
-

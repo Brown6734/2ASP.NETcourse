@@ -7,13 +7,17 @@ using System.Data;
 using System.Data.SqlClient;
 using SE256_Brown_Lab5_Razor.Models;
 
+//using Microsoft.Extensions.Configuration;
+
 using Microsoft.Extensions.Configuration;
+
+
 
 namespace SE256_Brown_Lab5_Razor.Models
 {
     public class ProductDataAccessLayer
     {
-        string connectionString;
+        public string connectionString;
 
         private readonly IConfiguration _configuration;
 
@@ -25,6 +29,8 @@ namespace SE256_Brown_Lab5_Razor.Models
 
         public void Create(ProductModels product)
         {
+            product.Feedback = "happy days in the sky";
+
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
                 string sql = "INSERT Into FunProducts (Product_Title, Product_Desc, Product_Category, ProdEmail, Manu_Date) VALUES (@Product_Title, @Product_Desc, @Product_Category, @ProdEmail, @Manu_Date);";
