@@ -6,7 +6,53 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome @Model.ProdTitle</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <table class="table table-bordered table-sm table-striped">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Item Title</th>
+                <th>Item Description</th>
+                <th>Item Category</th>
+                <th>Item Email</th>
+                <th>Item Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @if (Model == null)
+            {
+                <tr>
+                    <td colspan="7" class="text-center">No Model</td>
+                </tr>
+            }
+            else
+            {
+                @foreach(var p in Model.item1)
+                {
+                    
+                    <tr>
+                        <td>@p.aProduct.Items_ID>
+                        <td>@p.aProduct.Items_Title>
+                        <td>@p.aProduct.Items_Desc</td>
+                        <td>@p.aProduct.Items_Category</td>
+                        <td>@p.aProduct.ItemsEmail</td>
+                        <td>@p.aProduct.Items_Date</td>
+
+                        
+                        
+                    </tr>
+
+
+                }
+            }
+
+        </tbody>
+    </table>
+
+
 </div>
 
 <!--dd

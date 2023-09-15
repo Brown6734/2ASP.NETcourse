@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using SE256_Brown_Lab5_Razor.Models;
+using SE256_Brown_Lab5_Razor.Pages;
 
 //using Microsoft.Extensions.Configuration;
 
@@ -17,7 +18,7 @@ namespace SE256_Brown_Lab5_Razor.Models
 {
     public class ProductDataAccessLayer
     {
-        public string connectionString;
+        string connectionString;
 
         private readonly IConfiguration _configuration;
 
@@ -29,25 +30,25 @@ namespace SE256_Brown_Lab5_Razor.Models
 
         public void Create(ProductModels product)
         {
-            product.Feedback = "happy days in the sky";
+            //product.Feedback = "happy days in the sky";
 
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
-                string sql = "INSERT Into FunProducts (Product_Title, Product_Desc, Product_Category, ProdEmail, Manu_Date) VALUES (@Product_Title, @Product_Desc, @Product_Category, @ProdEmail, @Manu_Date);";
+                string sql1 = "INSERT Into ItemsTable (Items_Title, Items_Desc, Items_Category, ItemsEmail, Items_Date) VALUES (@Items_Title, @Items_Desc, @Items_Category, @ItemsEmail, @Items_Date);";
 
-                product.Feedback = "";
+                //product.Feedback = "";
 
 
                 try
                 {
-                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    using (SqlCommand command = new SqlCommand(sql1, connection))
                     {
                         command.CommandType = CommandType.Text;
-                        command.Parameters.AddWithValue("@Product_Title", product.Product_Title);
-                        command.Parameters.AddWithValue("@Product_Desc", product.Product_Desc);
-                        command.Parameters.AddWithValue("@Product_Category", product.Product_Category);
-                        command.Parameters.AddWithValue("@ProdEmail", product.ProdEmail);
-                        command.Parameters.AddWithValue("@Manu_Date", DateTime.Now);
+                        command.Parameters.AddWithValue("@Items_Title", product.Items_Title);
+                        command.Parameters.AddWithValue("@Items_Desc", product.Items_Desc);
+                        command.Parameters.AddWithValue("@Items_Category", product.Items_Category);
+                        command.Parameters.AddWithValue("@ItemsEmail", product.ItemsEmail);
+                        command.Parameters.AddWithValue("@Items_Date", DateTime.Now);
                        
 
                         connection.Open();
@@ -67,5 +68,51 @@ namespace SE256_Brown_Lab5_Razor.Models
 
             
         }
+
+
+        public IEnumerable<OneAddProductModel> GetActiveRecords()
+        {
+            List<OneAddProductModel> lstItem = new List<OneAddProductModel>();
+
+            try
+            {
+                using(SqlConnection con = new SqlConnection(connectionString))
+                {
+                    string strSQL = "SELECT * FROM ItemsTable ORDER BY Items_Date;";
+
+                    SqlCommand cmd = new SqlCommand(strSQL, con);
+                    cmd.CommandType = CommandType.Text;
+
+                    con.Open();
+                    SqlDataReader rdr = cmd.ExecuteReader();
+
+                    while (rdr.Read())
+                    {
+                        OneAddProductModel items = new OneAddProductModel(_configuration);
+
+                        items.aProduct.Items_ID = Convert.ToInt32(rdr["Items_ID"]);
+                        items.aProduct.Items_Title = rdr["Items_Title"].ToString();
+                        items.aProduct.Items_Desc = rdr["Items_Desc"].ToString();
+                        items.aProduct.Items_Category = rdr["Items_Category"].ToString();
+                        items.aProduct.ItemsEmail = rdr["ItemsEmail"].ToString();
+                        items.aProduct.Items_Date = DateTime.Parse(rdr["Items_Date"].ToString());
+
+                        lstItem.Add(items);
+
+                    }
+                    con.Close();
+                }
+            }
+            catch(Exception err)
+            {
+                //nothing
+            }
+            return lstItem;
+
+        }
+
+
     }
+
+
 }

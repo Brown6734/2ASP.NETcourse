@@ -8,31 +8,35 @@
 
 <form method="post">
 
+    <!--string sql1 = "INSERT Into FunProducts (Product_Title, Product_Desc, Product_Category, ProdEmail, Manu_Date) VALUES (Product_Title, Product_Desc, Product_Category, ProdEmail, Manu_Date);";-->
+
     <div class="form-group">
-        <label asp-for="aProduct.Product_Title"></label>
-        <input asp-for="aProduct.Product_Title" type="text" class="form-control" placeholder="Brief Product Title" />
-        <span asp-validation-for="aProduct.Product_Title" class="text-danger"></span>
+        <label asp-for="aProduct.Items_Title"></label>
+        <input asp-for="aProduct.Items_Title" type="text" class="form-control" placeholder="Brief Product Title" />
+        <span asp-validation-for="aProduct.Items_Title" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="aProduct.Product_Desc"></label>
-        <input asp-for="aProduct.Product_Desc" type="text" class="form-control" placeholder="Description of Product" />
-        <span asp-validation-for="aProduct.Product_Desc" class="text-danger"></span>
-
-    </div>
-
-    <div class="form-group">
-        <label asp-for="aProduct.Product_Category"></label>
-        <input asp-for="aProduct.Product_Category" type="text" class="form-control" placeholder="category" />
-        <span asp-validation-for="aProduct.Product_Category" class="text-danger"></span>
+        <label asp-for="aProduct.Items_Desc"></label>
+        <input asp-for="aProduct.Items_Desc" type="text" class="form-control" placeholder="Description of Product" />
+        <span asp-validation-for="aProduct.Items_Desc" class="text-danger"></span>
 
     </div>
 
     <div class="form-group">
-        <label asp-for="aProduct.ProdEmail"></label>
-        <input asp-for="aProduct.ProdEmail" type="text" class="form-control" placeholder="enter Email" />
-        <span asp-validation-for="aProduct.ProdEmail" class="text-danger"></span>
+        <label asp-for="aProduct.Items_Category"></label>
+        <input asp-for="aProduct.Items_Category" type="text" class="form-control" placeholder="category" />
+        <span asp-validation-for="aProduct.Items_Category" class="text-danger"></span>
+
     </div>
+
+    <div class="form-group">
+        <label asp-for="aProduct.ItemsEmail"></label>
+        <input asp-for="aProduct.ItemsEmail" type="text" class="form-control" placeholder="enter Email" />
+        <span asp-validation-for="aProduct.ItemsEmail" class="text-danger"></span>
+    </div>
+
+    
 
     <button type="submit" class="btn btn-primary">Submit</button>
 
@@ -52,22 +56,22 @@
 <!-- } -->
 <!-- } -->
 
-
-
-@{
+@{ 
     if (Model.aProduct != null && Model.aProduct.Feedback != null)
-    {
-        <h1>Results</h1>
-        <p>@Model.aProduct.Feedback</p>
-        
-    }
+            {
+                <h1>Results</h1>
+                <p>@Model.aProduct.Feedback</p>
+            }
 }
+
+
+
 
 <!--atS {
     if(Model.aProduct is null == false)
             {
                 <h1>Results</h1>
-                <p>atS Model.aProduct.Product_Title</p>
+                <p>atS Mosdel.aPrsoduct.Prsoduct_Title</p>
                 <p>atS Model.aProduct.ProdEmail</p>
             }
 }-->

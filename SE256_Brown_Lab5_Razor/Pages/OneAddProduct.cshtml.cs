@@ -22,7 +22,7 @@ namespace SE256_Brown_Lab5_Razor.Pages
         public OneAddProductModel(IConfiguration configuration)
         {
             _configuration = configuration;
-    }
+        }
 
     public void OnGet()
         {
@@ -30,7 +30,7 @@ namespace SE256_Brown_Lab5_Razor.Pages
 
         public IActionResult OnPost()
         {
-            aProduct.Feedback = "1 Record Added";
+            //aProduct.Feedback = "1 Record Added";
 
             IActionResult temp;
 

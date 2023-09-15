@@ -11,27 +11,26 @@ namespace SE256_Brown_Lab5_Razor.Models
     {
         [Required]
 
-        public int Product_ID { get; set; }
+        public int Items_ID { get; set; }
+
 
         [Required, StringLength(255)]
 
-        public String Product_Title { get; set; }
+        public String Items_Title { get; set; }
 
         [Required]
 
-        public String Product_Desc { get; set; }
+        public String Items_Desc { get; set; }
 
         [Required]
         [StringOptionsValidate(Allowed = new String[] {"Cat1", "Cat2", "Cat3", "Cat4"}, ErrorMessage = "Sorry.. category is invalid. Can only be: Cat1, Cat2, Cat3, Cat4")]
 
-        public String Product_Category { get; set; }
+        public String Items_Category { get; set; }
 
         [Required, EmailAddress]
-        public String ProdEmail { get; set; }
+        public String ItemsEmail { get; set; }
 
-        [Required,EmailAddress]
-
-        public String userEmail { get; set; }
+        
 
 
         [Required]
@@ -39,10 +38,9 @@ namespace SE256_Brown_Lab5_Razor.Models
         [DataType(DataType.DateTime), DisplayFormat(DataFormatString = "{0:MM/dd/yyy hh:mm:ss tt}", ApplyFormatInEditMode = true)]
         [MyDate(ErrorMessage = "Future date entry not allowed")]
 
-        public DateTime Manu_Date { get; set; }
+        public DateTime Items_Date { get; set; }
 
-        [Required]
-        public bool Active { get; set; }
+       
 
         public String Feedback { get; set; }
 
