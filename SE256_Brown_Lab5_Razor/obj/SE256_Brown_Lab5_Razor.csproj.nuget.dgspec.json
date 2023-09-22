@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj": {}
+    "C:\\Users\\Brown\\source\\repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj": {
+    "C:\\Users\\Brown\\source\\repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj",
+        "projectUniqueName": "C:\\Users\\Brown\\source\\repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj",
         "projectName": "SE256_Brown_Lab5_Razor",
-        "projectPath": "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj",
+        "projectPath": "C:\\Users\\Brown\\source\\repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\SE256_Brown_Lab5_Razor.csproj",
         "packagesPath": "C:\\Users\\Brown\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\obj\\",
+        "outputPath": "C:\\Users\\Brown\\source\\repos\\2ASP.NETcourse\\SE256_Brown_Lab5_Razor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Brown\\AppData\\Roaming\\NuGet\\NuGet.Config",

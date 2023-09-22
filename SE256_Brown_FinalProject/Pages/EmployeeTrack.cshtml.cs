@@ -26,6 +26,25 @@ namespace SE256_Brown_FinalProject.Pages
         {
         }
 
+        public IActionResult OnPost()
+        {
+            IActionResult temp;
+
+            if (ModelState.IsValid == false)
+            {
+                temp = Page();
+            }
+            else
+            {
+                if (oneEmp is null == false)
+                {
+                    EmployeeDataAccessLayer factory = new EmployeeDataAccessLayer(_configuration);
+                    factory.Create(oneEmp);
+                }
+                temp = Page();
+            }
+            return temp;
+        }
         
 
         

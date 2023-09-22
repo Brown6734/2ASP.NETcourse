@@ -34,6 +34,12 @@
 <form method="post">
 
     <div class="form-group">
+        <label asp-for="oneEmp.Employee_ID"></label>
+        <input asp-for="oneEmp.Employee_ID" type="number" class="form-control" placeholder="1" />
+        <span asp-validation-for="oneEmp.Employee_ID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
         <label asp-for="oneEmp.Employee_FirstName"></label>
         <input asp-for="oneEmp.Employee_FirstName" type="text" class="form-control" placeholder="Employee's First Name" />
         <span asp-validation-for="oneEmp.Employee_FirstName" class="text-danger"></span>
@@ -65,7 +71,7 @@
 
     <div class="form-group">
         <label asp-for="oneEmp.Employee_Phone"></label>
-        <input asp-for="oneEmp.Employee_Phone" type="number" class="form-control" placeholder="Employee's Phone Number" />
+        <input asp-for="oneEmp.Employee_Phone" type="text" class="form-control" placeholder="Employee's Phone Number" />
         <span asp-validation-for="oneEmp.Employee_Phone" class="text-danger"></span>
     </div>
 
@@ -95,25 +101,25 @@
 
     <div class="form-group">
         <label asp-for="oneEmp.Employee_StartShift"></label>
-        <input asp-for="oneEmp.Employee_StartShift" type="number" class="form-control" placeholder="Employee's Wage" />
+        <input asp-for="oneEmp.Employee_StartShift" type="date" class="form-control" placeholder="Employee Start Shift" />
         <span asp-validation-for="oneEmp.Employee_StartShift" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="oneEmp.Employee_EndShift"></label>
-        <input asp-for="oneEmp.Employee_EndShift" type="number" class="form-control" placeholder="Employee's Wage" />
+        <input asp-for="oneEmp.Employee_EndShift" type="date" class="form-control" placeholder="Employee End Shift" />
         <span asp-validation-for="oneEmp.Employee_EndShift" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="oneEmp.Employee_LunchOut"></label>
-        <input asp-for="oneEmp.Employee_LunchOut" type="number" class="form-control" placeholder="Employee's Wage" />
+        <input asp-for="oneEmp.Employee_LunchOut" type="date" class="form-control" placeholder="Employee Lunch Out" />
         <span asp-validation-for="oneEmp.Employee_LunchOut" class="text-danger"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="oneEmp.Employee_LunchIn"></label>
-        <input asp-for="oneEmp.Employee_LunchIn" type="number" class="form-control" placeholder="Employee's Wage" />
+        <input asp-for="oneEmp.Employee_LunchIn" type="date" class="form-control" placeholder="Employee Lunch In" />
         <span asp-validation-for="oneEmp.Employee_LunchIn" class="text-danger"></span>
     </div>
 
@@ -133,6 +139,8 @@
     if(Model.oneEmp != null && Model.oneEmp.Feedback != null)
             {
                 <h1>Results</h1>
+
+                <p>@Model.oneEmp.Feedback</p>
                 <p>@Model.oneEmp.Employee_LastName</p>
                 <p>@Model.oneEmp.Employee_Department</p>
             }

@@ -39,7 +39,7 @@ namespace SE256_Brown_FinalProject.Models
 
         //employee contact phone number
         [Required, Phone]
-        public int Employee_Phone { get; set; }
+        public String Employee_Phone { get; set; }
 
         //employee address
         [Required, StringLength(255)]
@@ -104,8 +104,8 @@ namespace SE256_Brown_FinalProject.Models
         //is employee currently working here?
         //boolean, required
 
-        [Required]
-        public bool Active { get; set; }
+       // [Required]
+       // public bool Active { get; set; }
 
         //feedback string
         public String Feedback { get; set; }

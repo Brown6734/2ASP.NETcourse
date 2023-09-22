@@ -454,24 +454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\008017698\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Brown\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\2ASP.NET\\SE256_Brown_FinalProject\\SE256_Brown_FinalProject.csproj",
+      "projectUniqueName": "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_FinalProject\\SE256_Brown_FinalProject.csproj",
       "projectName": "SE256_Brown_FinalProject",
-      "projectPath": "Z:\\2ASP.NET\\SE256_Brown_FinalProject\\SE256_Brown_FinalProject.csproj",
-      "packagesPath": "C:\\Users\\008017698\\.nuget\\packages\\",
-      "outputPath": "Z:\\2ASP.NET\\SE256_Brown_FinalProject\\obj\\",
+      "projectPath": "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_FinalProject\\SE256_Brown_FinalProject.csproj",
+      "packagesPath": "C:\\Users\\Brown\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Brown\\Source\\Repos\\2ASP.NETcourse\\SE256_Brown_FinalProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\008017698\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Brown\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

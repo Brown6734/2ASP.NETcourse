@@ -5,6 +5,47 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome @Model.EmpFName</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <br /> <br /> <br /> <br/> 
+
+    <table class="table table-bordered table-sm table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Employee First Name</th>
+                <th>Employee Last Name</th>
+                <th>Employee Email</th>
+                <th>Employee Phone</th>
+                <th>Employee ID Number</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model == null)
+            {
+                <tr>
+                    <td colspan="7" class="text-center">No Model</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var p in Model.emp1)
+                {
+                    <tr>
+                        <td>@p.Employee_ID</td>
+                        <td>@p.Employee_FirstName</td>
+                        <td>@p.Employee_LastName</td>
+                        <td>@p.Employee_Email</td>
+                        <td>@p.Employee_Phone</td>
+                        <td>@p.Employee_Number</td>
+
+
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
 </div>
